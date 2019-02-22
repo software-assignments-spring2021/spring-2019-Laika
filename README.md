@@ -15,6 +15,8 @@ Lack of confidence in what their donations are actually used for
 This project will strive to becomes a platform where anyone can create projects to raise fund or donate their computer's processing power to mine tokens to contribute to a project. The token will be built on the Ethereum Blockchain, so everyone can be 100% sure that their contributions all went to the project instead of any middlemen skimming the donation. The ease of just leaving a browser tab on to make a donation will hopefully encourage more people to become generous and make a small or big contribution. In the future, the token usage after donation could be tracked too so the donor will know exactly how the donation was used.
 Currently, there are some websites which users can mine Monero for a good cause. However, the lack of transparency of Monero leaves the miners wondering where their donations actually go to.
 
+Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-donation/blob/master/REQUIREMENTS.md) for a better understanding of project details.
+
 ## Getting Started
 
 * git clone https://github.com/nyu-software-engineering/crowd-donation.git
