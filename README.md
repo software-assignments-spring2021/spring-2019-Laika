@@ -14,8 +14,9 @@ Currently, there are some websites which users can mine Monero for a good cause.
 
 ## Getting Started
 
-git clone https://github.com/nyu-software-engineering/crowd-donation.git
-npm install
+* git clone https://github.com/nyu-software-engineering/crowd-donation.git
+
+* npm install
 
 ### Prerequisites
 
@@ -30,21 +31,7 @@ npm install
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Work in progress
 
 ## Running the tests
 
@@ -68,24 +55,13 @@ Work in progress
 
 Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-donation/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Authors
 
-<<<<<<< HEAD
 * **Masaki Kagesawa**
 * **Sean Cao**
 * **Rachel Rios**
 * [Owen England](https://github.com/owenofengland)
 * **Angela Zhang**
-=======
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* [**Owen England**](https://github.com/owenofengland)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
->>>>>>> 5974e10bff2240d833c057c05f25a283f9d60a7d
 
 ## License
 
