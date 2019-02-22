@@ -72,6 +72,6 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 * [Sean Cao](https://github.com/SeanSCao)
 * [Rachel Ruis](https://github.com/Rachelnarios)
 * [Owen England](https://github.com/owenofengland)
-* **Angela Zhang**
+* [Angela Zhang](https://github.com/sillyangela)
 
 ## Acknowledgments
