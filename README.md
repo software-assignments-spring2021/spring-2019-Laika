@@ -74,11 +74,18 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
+<<<<<<< HEAD
 * **Masaki Kagesawa**
 * **Sean Cao**
 * **Rachel Rios**
 * [Owen England](https://github.com/owenofengland)
 * **Angela Zhang**
+=======
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* [**Owen England**](https://github.com/owenofengland)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+>>>>>>> 5974e10bff2240d833c057c05f25a283f9d60a7d
 
 ## License
 
