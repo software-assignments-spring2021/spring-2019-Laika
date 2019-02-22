@@ -15,7 +15,34 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 
 ---
 
-Below is our code of conduct, please follow it when interacting with the project.
+## Project Values and Team Norms
+
+* Show up on time
+* Try to finish your assigned tasks
+* Notify team if making changes that are not assigned to you as a task
+* Push often, pull before pushing
+
+## Progress Tracking
+
+* Schedule reasonable amount of tasks per sprint, adjusting in following sprints if too much or too little work is assigned
+* Rotate roles
+* In case someone is unable to complete their task (busy, knowledge gap, etc.), voice in advance and seek help asap (team members, tutor, professor)
+* If some tasks are unable to be completed by the end of a sprint, vote and re-evaluate during stand-up
+
+## When is something done?
+
+* Fulfills acceptance criteria for task
+* Meets stakeholder requirements
+
+## Prioritizing Backlog and Tasks
+
+* Learning Ganache, Truffle, js,
+* Setting up Docker
+* Setting up Token
+
+---
+
+**Below is our code of conduct, please follow it when interacting with the project.**
 
 ---
 
