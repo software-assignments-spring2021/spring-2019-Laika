@@ -7,7 +7,11 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 
 ## Git Workflow
 
-TBD
+**Trunk Based Workflow**
+1. Each person create their own working branch
+2. We divide and assign tasks to team members
+3. When completed bug free, merge back
+4. When making a pull request and merging to branch, make sure that it is reviewed and approved by team members
 
 ---
 
