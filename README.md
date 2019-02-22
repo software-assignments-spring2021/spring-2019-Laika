@@ -1,19 +1,25 @@
 ![Laika](logo.png)
 # Laika: A Crowd Donation Project
 
-## What
+## Overview
 Crowd Donation Platform with an ERC-20 Web Browser Mineable Token. Anyone can use their web browser to mine a token and donate it to a charitable project of their choice.
 
-## Why
-Biggest reasons why people do not donate or volunteer are
+## A solution for transparency
 
-No Money
+Donating money has decreased over the past years due to a lack of transparency of many organizations. Donors are no longer confident in their contributions and they might see it as a waste of money.
 
-No Time
 
-Lack of confidence in what their donations are actually used for
-This project will strive to becomes a platform where anyone can create projects to raise fund or donate their computer's processing power to mine tokens to contribute to a project. The token will be built on the Ethereum Blockchain, so everyone can be 100% sure that their contributions all went to the project instead of any middlemen skimming the donation. The ease of just leaving a browser tab on to make a donation will hopefully encourage more people to become generous and make a small or big contribution. In the future, the token usage after donation could be tracked too so the donor will know exactly how the donation was used.
-Currently, there are some websites which users can mine Monero for a good cause. However, the lack of transparency of Monero leaves the miners wondering where their donations actually go to.
+
+Laika Crowd Funding, strives to become a powerful platform where approved 503c organizations can sign up to receive funds using crypto and a blockchain – anyone with a computer can help raise funds with full transparency. Currently, there are some websites which users can mine “Monero” for a good cause. However, the lack of transparency of “Monero” leaves donors wondering where their contributions go.
+
+
+
+Our system uses Ethereum Blockchain, guaranteeing confidence in the donation as all transactions are public. Users select from a list of verified donors and they donate their tokens to them, the 503c charity will receive the funds and spend them on a market place within the platform. All purchases are public and the user can track where every coin was spent on. With this straightforward platform we hope to increase the willingness to donate and leave users with a peace of mind.
+
+
+
+In the future we hope to merge a mining service where there user will leave a browser tab open to donate therefore, facilitating the process and encourage more people to become generous.
+
 
 Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-donation/blob/master/REQUIREMENTS.md) for a better understanding of project details.
 
@@ -64,7 +70,7 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 
 * [Masaki Kagesawa](https://github.com/MKagesawa)
 * [Sean Cao](https://github.com/SeanSCao)
-* **Rachel Rios**
+* [Rachel Ruis](https://github.com/Rachelnarios)
 * [Owen England](https://github.com/owenofengland)
 * **Angela Zhang**
 
