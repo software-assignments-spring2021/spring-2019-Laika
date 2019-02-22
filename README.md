@@ -61,7 +61,7 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Authors
 
 * **Masaki Kagesawa**
-* **Sean Cao**
+* [Sean Cao](https://github.com/SeanSCao)
 * **Rachel Rios**
 * [Owen England](https://github.com/owenofengland)
 * **Angela Zhang**
