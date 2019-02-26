@@ -68,7 +68,7 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 
 ### Standups
 
-* Time TBD
+* Time: Tuesday/Thursday after class 1:45 - 2:00
 
 ---
 
