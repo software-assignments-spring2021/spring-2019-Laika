@@ -26,7 +26,7 @@ Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-
 
 * git clone https://github.com/nyu-software-engineering/crowd-donation.git
 
-* npm install
+* npm install -g truffle
 
 ### Prerequisites
 
@@ -49,7 +49,15 @@ Work In Progress
 
 ## Deployment
 
-Work in progress
+* truffle develop
+
+* compile
+
+* migrate
+
+* cd client
+
+* npm run start
 
 ## Built With
 
