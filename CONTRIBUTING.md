@@ -8,10 +8,15 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 ## Git Workflow
 
 **Feature Branch Based Workflow**
-1. Each person create their own working branch
-2. We divide and assign tasks to team members
-3. When completed bug free, merge back
-4. When making a pull request and merging to branch, make sure that it is reviewed and approved by team members
+1. Git pull first
+2. Each person create their own working feature Branch
+3. Name the branch with the issue type + "/" + the issue number + "/" sub task from the issue (if applicable)
+4. Do the changes/work on the issue
+5. When completed bug free, push branch back to remote
+6. Make a pull request on the trunk branch
+7. When making a pull request and merging to branch, make sure that it is reviewed and approved by team members before being merged to the master
+
+A note: A feature should be merged back to the master within 1 - 2 days, so as to ensure the local master branch is as up to date with the remote as possible
 
 ---
 
