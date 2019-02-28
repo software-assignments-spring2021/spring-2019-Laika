@@ -69,7 +69,7 @@ A note: A feature should be merged back to the master within 1 - 2 days, so as t
 
 ### Sprints/Scrum
 
-* Time TBD
+* Time: Thursday: 6-8pm
 
 ### Standups
 
