@@ -63,6 +63,8 @@ A note: A feature should be merged back to the master within 1 - 2 days, so as t
 
 5. This will be reviewed by both developers and the scrum master, who will decide whether or not to accept the request, and close the issue.
 
+6. Merging a branch will require review and approval from at least one other team member.
+
 ---
 
 ## Meeting Times
