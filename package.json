@@ -1,7 +1,7 @@
 {
   "name": "pet-shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Laika](logo.png) # Laika: A Crowd Donation Project",
   "main": "truffle.js",
   "directories": {
     "test": "test"
@@ -14,5 +14,16 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
-  }
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^2.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-software-engineering/crowd-donation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nyu-software-engineering/crowd-donation/issues"
+  },
+  "homepage": "https://github.com/nyu-software-engineering/crowd-donation#readme"
 }
