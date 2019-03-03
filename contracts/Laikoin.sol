@@ -31,12 +31,12 @@ contract ERC20Interface {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
 
-/** @dev Used for token transfer as contracts generally do not receive events */
-contract ApproveAndCallFallBack {
-    function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
-}
+// /** @dev Used for token transfer as contracts generally do not receive events */
+// contract ApproveAndCallFallBack {
+//     function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
+// }
 
-contract Laikoin is ERC20, Pausable {
+contract Laikoin is ERC20Interface, Pausable {
     //all arithmetic operation in this contract uses Openzeppelin's SafeMath library
     using SafeMath for uint;
     using ExtendedMath for uint;
@@ -44,6 +44,8 @@ contract Laikoin is ERC20, Pausable {
     string public  name;
     uint8 public decimals;
     uint public _totalSupply;
+    mapping(address => uint) private balances;
+    mapping(address => mapping(address => uint)) private allowed;
 
     /** @dev Deafault Constructor */
     constructor() public {
@@ -92,11 +94,11 @@ contract Laikoin is ERC20, Pausable {
         return super.transferFrom(from, to, value);
     }
 
-    function increaseAllowance(address spender, uint addedValue) public whenNotPaused returns (bool success) {
-        return super.increaseAllowance(spender, addedValue);
-    }
+    // function increaseAllowance(address spender, uint addedValue) public whenNotPaused returns (bool success) {
+    //     return super.increaseAllowance(spender, addedValue);
+    // }
 
-    function decreaseAllowance(address spender, uint subtractedValue) public whenNotPaused returns (bool success) {
-        return super.decreaseAllowance(spender, subtractedValue);
-    }
+    // function decreaseAllowance(address spender, uint subtractedValue) public whenNotPaused returns (bool success) {
+    //     return super.decreaseAllowance(spender, subtractedValue);
+    // }
 }
