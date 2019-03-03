@@ -16,7 +16,10 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 6. Make a pull request on the trunk branch
 7. When making a pull request and merging to branch, make sure that it is reviewed and approved by team members before being merged to the master
 
-A note: A feature should be merged back to the master within 1 - 2 days, so as to ensure the local master branch is as up to date with the remote as possible
+Notes:
+- A feature should be merged back to the master within 1 - 2 days, so as to ensure the local master branch is as up to date with the remote as possible
+- If you made a mistake committing, use **git revert** and not **git reset HEAD^ --hard**. We'd like to have a record of all commits and prevent accidenttaly deleting commmitting history
+
 
 ---
 
@@ -64,7 +67,6 @@ A note: A feature should be merged back to the master within 1 - 2 days, so as t
 5. This will be reviewed by both developers and the scrum master, who will decide whether or not to accept the request, and close the issue.
 
 6. Merging a branch will require review and approval from at least one other team member.
-
 ---
 
 ## Meeting Times
