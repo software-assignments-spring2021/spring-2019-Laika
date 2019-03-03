@@ -52,19 +52,44 @@ contract Laikoin is ERC20, Pausable {
         decimals = 1;
         //population of the world on March 2019 (7.5 billion) divided by 1000
         _totalSupply = 750000 * 10**uint(decimals);
-        
+
+    }
+
+    /** @dev Getter for the total supply */
+    function totalSupply() public view returns (uint) {
+        return _totalSupply;
+    }
+
+    /**
+    @notice Get the token balance for the given address
+    @param tokenOwner Address whose balance will be queried
+    @return uint256 Represents the balance
+    */
+    function balanceOf(address tokenOwner) public view returns (uint balance) {
+        return balances[tokenOwner];
+    }
+
+    /**
+    @notice returns the amount of tokens allowed by owner that can be transferred to spender's account
+    @param tokenOwner Token owner's address
+    @param spender Spender's address
+    @return uint256 Amount of tokens available to the spender
+    */
+    function allowance(address tokenOwner, address spender) public whenNotPaused
+    view returns (uint remaining) {
+        return allowed[tokenOwner][spender];
     }
 
     function transfer(address to, uint256 value) public whenNotPaused returns (bool) {
         return super.transfer(to, value);
     }
 
-    function transferFrom(address from, address to, uint256 value) public whenNotPaused returns (bool) {
-        return super.transferFrom(from, to, value);
-    }
-
     function approve(address spender, uint256 value) public whenNotPaused returns (bool) {
         return super.approve(spender, value);
+    }
+
+    function transferFrom(address from, address to, uint256 value) public whenNotPaused returns (bool) {
+        return super.transferFrom(from, to, value);
     }
 
     function increaseAllowance(address spender, uint addedValue) public whenNotPaused returns (bool success) {
