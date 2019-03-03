@@ -35,3 +35,43 @@ contract ERC20Interface {
 contract ApproveAndCallFallBack {
     function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
 }
+
+contract Laikoin is ERC20, Pausable {
+    //all arithmetic operation in this contract uses Openzeppelin's SafeMath library
+    using SafeMath for uint;
+    using ExtendedMath for uint;
+    string public symbol;
+    string public  name;
+    uint8 public decimals;
+    uint public _totalSupply;
+
+    /** @dev Deafault Constructor */
+    constructor() public {
+        symbol = "LAI";
+        name = "Laikoin";
+        decimals = 1;
+        //population of the world on March 2019 (7.5 billion) divided by 1000
+        _totalSupply = 750000 * 10**uint(decimals);
+        
+    }
+
+    function transfer(address to, uint256 value) public whenNotPaused returns (bool) {
+        return super.transfer(to, value);
+    }
+
+    function transferFrom(address from, address to, uint256 value) public whenNotPaused returns (bool) {
+        return super.transferFrom(from, to, value);
+    }
+
+    function approve(address spender, uint256 value) public whenNotPaused returns (bool) {
+        return super.approve(spender, value);
+    }
+
+    function increaseAllowance(address spender, uint addedValue) public whenNotPaused returns (bool success) {
+        return super.increaseAllowance(spender, addedValue);
+    }
+
+    function decreaseAllowance(address spender, uint subtractedValue) public whenNotPaused returns (bool success) {
+        return super.decreaseAllowance(spender, subtractedValue);
+    }
+}
