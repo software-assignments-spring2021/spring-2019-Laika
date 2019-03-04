@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
+// import "node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
 import "node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 /**
@@ -37,7 +37,7 @@ contract ERC20Interface {
 //     function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
 // }
 
-contract Laikoin is ERC20Interface, Pausable {
+contract Laikoin is ERC20Interface {
     //all arithmetic operation in this contract uses Openzeppelin's SafeMath library
     using SafeMath for uint256;
     using ExtendedMath for uint;
@@ -89,7 +89,7 @@ contract Laikoin is ERC20Interface, Pausable {
     * @param to The address to transfer to.
     * @param value The amount to be transferred.
     */
-    function transfer(address to, uint256 value) public whenNotPaused returns (bool) {
+    function transfer(address to, uint256 value) public returns (bool) {
         _transfer(msg.sender, to, value);
         return true;
     }
@@ -103,7 +103,7 @@ contract Laikoin is ERC20Interface, Pausable {
      * @param spender The address which will spend the funds.
      * @param value The amount of tokens to be spent.
      */
-    function approve(address spender, uint256 value) public whenNotPaused returns (bool) {
+    function approve(address spender, uint256 value) public returns (bool) {
         require(spender != address(0));
 
         _allowed[msg.sender][spender] = value;
@@ -119,7 +119,7 @@ contract Laikoin is ERC20Interface, Pausable {
      * @param to address The address which you want to transfer to
      * @param value uint256 the amount of tokens to be transferred
      */
-    function transferFrom(address from, address to, uint256 value) public whenNotPaused returns (bool) {
+    function transferFrom(address from, address to, uint256 value) public returns (bool) {
         _allowed[from][msg.sender] = _allowed[from][msg.sender].sub(value);
         _transfer(from, to, value);
         emit Approval(from, msg.sender, _allowed[from][msg.sender]);
@@ -136,7 +136,7 @@ contract Laikoin is ERC20Interface, Pausable {
      * @param spender The address which will spend the funds.
      * @param addedValue The amount of tokens to increase the allowance by.
      */
-    function increaseAllowance(address spender, uint256 addedValue) public whenNotPaused returns (bool) {
+    function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
         require(spender != address(0));
 
         _allowed[msg.sender][spender] = _allowed[msg.sender][spender].add(addedValue);
@@ -154,7 +154,7 @@ contract Laikoin is ERC20Interface, Pausable {
      * @param spender The address which will spend the funds.
      * @param subtractedValue The amount of tokens to decrease the allowance by.
      */
-    function decreaseAllowance(address spender, uint256 subtractedValue) public whenNotPaused returns (bool) {
+    function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
         require(spender != address(0));
 
         _allowed[msg.sender][spender] = _allowed[msg.sender][spender].sub(subtractedValue);
