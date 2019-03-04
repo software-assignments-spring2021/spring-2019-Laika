@@ -5,6 +5,10 @@ import "truffle/DeployedAddresses.sol";
 import "../contracts/Laikoin.sol";
 
 contract TestLaikoin {
+	Laikoin laikoin = Laikoin(DeployedAddresses.Laikoin());
+	address expectedOwner = address(this);
+	uint256 expectedBalance = 0;
+
 	function testTotalSupply() public {
 		Laikoin lai = new Laikoin();
 		uint expected = 7500000;
@@ -21,4 +25,10 @@ contract TestLaikoin {
 		Assert.equal(user1.balanceOf(this), 500, "User1 should have 500 tokens");
 		Assert.equal(user2.balanceOf(this), 1500, "User2 should have 1500 tokens");
 	}
+
+	function testBalanceOf() public {
+		uint256 returnedBalance = laikoin.balanceOf(expectedOwner);
+		Assert.equal(returnedBalance, expectedBalance, "Returned balance should equal expected balance, 0");
+	}
 }
+
