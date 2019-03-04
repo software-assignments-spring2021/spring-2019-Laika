@@ -7,7 +7,7 @@
 
 @import '../partials/layout'; // responsive grid and media queries
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -75,9 +75,9 @@ h1 {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 
@@ -239,7 +239,7 @@ Main Components
 		background: $color-3;
 		box-shadow: 0 4px 30px rgba(#000, .17);
 		pointer-events: auto;
-	} 
+	}
 
 	header, footer {
 		position: absolute;
@@ -316,6 +316,7 @@ Main Components
 
 		&:hover {
 			background: lighten($color-2, 3%);
+			background-color: blue;
 		}
 
 		em {
@@ -370,7 +371,7 @@ Main Components
 				/* this class is added to an item when it is removed form the cart */
 				position: absolute;
 				left: 1.4em;
-				width: calc(100% - 2.8em); 
+				width: calc(100% - 2.8em);
 				opacity: 0;
 				animation: cd-item-slide-out .3s forwards;
 
@@ -451,7 +452,7 @@ Main Components
 		color: tint($color-1, 40%);
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
-	} 
+	}
 
 	.delete-item {
 		margin-right: 1em;
@@ -508,14 +509,14 @@ Main Components
 		/* hide default select arrow on IE */
       	display: none;
 	}
-	
+
 	.cart-open & .wrapper {
 		height: 100%;
 		width: 100%;
 		transition-delay: 0s;
 	}
 
-	.cart-open & header, 
+	.cart-open & header,
 	.cart-open & .body {
 		opacity: 1;
 	}
@@ -523,10 +524,10 @@ Main Components
 	.cart-open & header {
 		transition: opacity .2s .2s;
 	}
-	
+
 	.cart-open & .body {
 		transition: opacity 0s;
-		
+
 		li {
 			transition: transform .3s .2s, opacity .3s .2s;
 			opacity: 1;
@@ -558,7 +559,7 @@ Main Components
 
 		&:hover em {
 			padding-right: 30px;
-			
+
 			&::after {
 				opacity: 1;
 			}
