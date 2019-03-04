@@ -82,3 +82,5 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 * [Angela Zhang](https://github.com/sillyangela)
 
 ## Acknowledgments
+* The open source UI framework is provided by [Black Rock Digital] (http://blackrockdigital.io/)
+* The open source market place JQuery shopping cart is provided by [Cody House] (https://codyhouse.co/)
