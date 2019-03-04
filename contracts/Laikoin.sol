@@ -8,7 +8,6 @@ import "node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
 
  * @notice
  Inspired by OpenZeppelin-Solidity ERC20 Token
-
 */
 
 /** @dev Safe '>' implemented */
@@ -56,6 +55,11 @@ contract Laikoin is ERC20Interface {
         //population of the world on March 2019 (7.5 billion) divided by 1000
         _totalSupply = 750000 * 10**uint(decimals);
 
+    }
+
+    /** @dev Getter for the address of caller. Used for testing and debugging purposes. */
+    function getAddress() public view returns (address) {
+        return msg.sender;
     }
 
     /**
@@ -160,20 +164,6 @@ contract Laikoin is ERC20Interface {
         _allowed[msg.sender][spender] = _allowed[msg.sender][spender].sub(subtractedValue);
         emit Approval(msg.sender, spender, _allowed[msg.sender][spender]);
         return true;
-    }
-
-    /**
-    * @dev Transfer token for a specified addresses
-    * @param from The address to transfer from.
-    * @param to The address to transfer to.
-    * @param value The amount to be transferred.
-    */
-    function _transfer(address from, address to, uint256 value) internal {
-        require(to != address(0));
-
-        _balances[from] = _balances[from].sub(value);
-        _balances[to] = _balances[to].add(value);
-        emit Transfer(from, to, value);
     }
 
     /**
