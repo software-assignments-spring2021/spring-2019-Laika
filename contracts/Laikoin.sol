@@ -166,19 +166,6 @@ contract Laikoin is ERC20Interface {
         return true;
     }
 
-    /**	
-    * @dev Transfer token for a specified addresses	
-    * @param from The address to transfer from.	
-    * @param to The address to transfer to.	
-    * @param value The amount to be transferred.	
-    */	
-    function _transfer(address from, address to, uint256 value) internal {	
-        require(to != address(0));	
-         _balances[from] = _balances[from].sub(value);	
-        _balances[to] = _balances[to].add(value);	
-        emit Transfer(from, to, value);	
-    }
-
     /**
     * @dev Transfer token for a specified addresses
     * @param from The address to transfer from.
