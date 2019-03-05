@@ -54,6 +54,7 @@ jQuery(document).ready(function($){
 		});
 	}
 
+
 	function toggleCart(bool) {
 		var cartIsOpen = ( typeof bool === 'undefined' ) ? cartWrapper.hasClass('cart-open') : bool;
 
