@@ -15,16 +15,15 @@ contract TestLaikoin {
 	}
 
 	function testTransfer() public {
-		Laikoin user1 = new Laikoin();
-		Laikoin user2 = new Laikoin();
+		ExposedLaikoin user1 = new ExposedLaikoin();
+		ExposedLaikoin user2 = new ExposedLaikoin();
 		address user1Addr = user1.getAddress();
 		address user2Addr = user2.getAddress();
-		ExposedLaikoin exposed = new ExposedLaikoin();
-		exposed.mint(user1Addr, 1000);
-		bool success = user1.transfer(user2Addr, 500);
+		user1.mint(user1Addr, 1000);
+		bool success = user1.transfer(user2Addr, 400);
 		Assert.equal(success, true, "transfer should succeed");
-		Assert.equal(user1.balanceOf(user1Addr), 500, "User1 should have 500 tokens");
-		Assert.equal(user2.balanceOf(user2Addr), 500, "User2 should have 500 tokens");
+		Assert.equal(user1.balanceOf(user1Addr), 600, "User1 should have 500 tokens");
+		Assert.equal(user2.balanceOf(user2Addr), 400, "User2 should have 500 tokens");
 	}
 
 	function testBalanceOf() public {
