@@ -16,6 +16,11 @@ contract TestLaikoin {
 		Assert.equal(result, expected, "Initial total supply should be 7500000");
 	}
 
+	function testGetAddress() public {
+		address returnedAddress = laikoin.getAddress();
+		Assert.equal(returnedAddress, expectedOwner, "Returned address should be equal to expected");
+	}
+	/*
 	function testTransfer() public {
 		Laikoin user1 = new Laikoin();
 		Laikoin user2 = new Laikoin();
@@ -25,10 +30,21 @@ contract TestLaikoin {
 		Assert.equal(user1.balanceOf(this), 500, "User1 should have 500 tokens");
 		Assert.equal(user2.balanceOf(this), 1500, "User2 should have 1500 tokens");
 	}
+	*/
+	/*
+	function testAllowance() public {
 
+	}
+	*/
 	function testBalanceOf() public {
 		uint256 returnedBalance = laikoin.balanceOf(expectedOwner);
 		Assert.equal(returnedBalance, expectedBalance, "Returned balance should equal expected balance, 0");
 	}
-}
 
+	function testApprove() public {
+		Laikoin user1 = new Laikoin();
+		bool expectedSuccess = true;
+		bool resultSuccess = user1.approve(expectedOwner, 0);
+		Assert.equal(resultSuccess, expectedSuccess, "User 1 approving user 2 sending 0 tokens should return true");
+	}
+}
