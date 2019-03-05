@@ -45,7 +45,11 @@ Work in progress
 
 ## Running the tests
 
-Work In Progress
+Running Smart Contract tests
+**Make sure both Truffle and Ganache are installed!**
+1. Open ganache
+2. From command line: truffle compile
+3. From command line: truffle test
 
 ## Deployment
 
