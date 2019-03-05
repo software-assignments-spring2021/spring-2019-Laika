@@ -38,8 +38,8 @@ contract ERC20Interface {
 
 contract Laikoin is ERC20Interface {
     //all arithmetic operation in this contract uses Openzeppelin's SafeMath library
-    using SafeMath for uint256;
-    using ExtendedMath for uint;
+    using   SafeMath for uint256;
+    // using ExtendedMath for uint;
     string public symbol;
     string public  name;
     uint8 public decimals;

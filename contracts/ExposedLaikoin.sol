@@ -10,7 +10,7 @@ import "node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 contract ExposedLaikoin is Laikoin {
     using SafeMath for uint256;
-    using ExtendedMath for uint;
+    // using ExtendedMath for uint;
     string public symbol;
     string public  name;
     uint8 public decimals;
