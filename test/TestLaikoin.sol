@@ -7,6 +7,9 @@ import "contracts/ExposedLaikoin.sol";
 
 contract TestLaikoin {
 
+	Laikoin laikoin = Laikoin(DeployedAddresses.Laikoin());
+	address expectedOwner = address(this);
+
 	function testTotalSupply() public {
 		Laikoin lai = new Laikoin();
 		uint expected = 7500000;
@@ -36,9 +39,15 @@ contract TestLaikoin {
 
 	}
 	*/
+
+	function testMint() public {
+		ExposedLaikoin user1 = new ExposedLaikoin();
+		address user1Addr = user1.getAddress();
+		user1.mint(user1Addr, 1000);
+		Assert.equal(user1.balanceOf(user1Addr), 2000, "User1 should have 2000 tokens now");
+	}
+
 	function testBalanceOf() public {
-		Laikoin laikoin = Laikoin(DeployedAddresses.Laikoin());
-		address expectedOwner = address(this);
 		uint256 expectedBalance = 0;
 		uint256 returnedBalance = laikoin.balanceOf(expectedOwner);
 		Assert.equal(returnedBalance, expectedBalance, "Returned balance should equal expected balance, 0");
@@ -49,5 +58,14 @@ contract TestLaikoin {
 		bool expectedSuccess = true;
 		bool resultSuccess = user1.approve(expectedOwner, 0);
 		Assert.equal(resultSuccess, expectedSuccess, "User 1 approving user 2 sending 0 tokens should return true");
+	}
+
+	function testAllowance() public {
+		Laikoin user1 = new Laikoin();
+		Laikoin user2 = new Laikoin();
+		address user1Addr = user1.getAddress();
+		address user2Addr = user2.getAddress();
+		Assert.equal(user1.allowance(user1Addr, user2Addr), 0, "Initially user1 should have no allowance to user 2");
+
 	}
 }
