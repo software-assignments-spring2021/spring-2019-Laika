@@ -34,11 +34,6 @@ contract TestLaikoin {
 		Assert.equal(user2.balanceOf(user2Addr), 400, "User2 should have 500 tokens");
 	}
 	*/
-	/*
-	function testAllowance() public {
-
-	}
-	*/
 
 	function testMint() public {
 		ExposedLaikoin user1 = new ExposedLaikoin();
@@ -66,6 +61,11 @@ contract TestLaikoin {
 		address user1Addr = user1.getAddress();
 		address user2Addr = user2.getAddress();
 		Assert.equal(user1.allowance(user1Addr, user2Addr), 0, "Initially user1 should have no allowance to user 2");
-
+		bool resultSuccessIncrease = user1.increaseAllowance(user2Addr, 300);
+		Assert.equal(resultSuccessIncrease, true, "User 1 increasing allowance should succeed");
+		Assert.equal(user1.allowance(user1Addr, user2Addr), 300, "User 1 should have 300 allowance to user 2");
+		bool resultSuccessDecrease = user1.decreaseAllowance(user2Addr, 100);
+		Assert.equal(resultSuccessDecrease, true, "User 1 decreasing allowance should succeed");
+		Assert.equal(user1.allowance(user1Addr, user2Addr), 200, "User 1 should have 200 allowance to user 2");
 	}
 }
