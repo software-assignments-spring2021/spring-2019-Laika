@@ -13,9 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "chai": "^4.2.0",
     "lite-server": "^2.3.0",
     "mocha": "^6.0.2",
+=======
+    "lite-server": "^2.3.0",
+>>>>>>> master
     "nyc": "^13.3.0"
   },
   "dependencies": {
