@@ -1,5 +1,5 @@
 var assert = require("assert")
-var x = require("./maTest.js")
+var x = require("../src/js/maTest")
 // var expect = require('chai').expect;
 
 var car = false;
