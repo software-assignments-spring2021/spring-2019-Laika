@@ -43,7 +43,7 @@ contract Laikoin is ERC20Interface {
     string public symbol;
     string public  name;
     uint8 public decimals;
-    mapping (address => uint256) private _balances;
+    mapping (address => uint256) public _balances;
     mapping (address => mapping (address => uint256)) private _allowed;
     uint256 private _totalSupply;
 
