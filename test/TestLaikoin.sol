@@ -21,6 +21,19 @@ contract TestLaikoin {
 		address returnedAddress = laikoin.getAddress();
 		Assert.equal(returnedAddress, expectedOwner, "Returned address should be equal to expected");
 	}
+	function testTransfer() public {
+		ExposedLaikoin user1 = new ExposedLaikoin();
+		ExposedLaikoin user2 = new ExposedLaikoin();
+		address user1Addr = user1.getAddress();
+		address user2Addr = user2.getAddress();
+		uint user1Bal = user1.balanceOf(user1Addr);
+		uint user2Bal = user2.balanceOf(user2Addr);
+		bool expected = true;
+		bool returned = user1.transfer(user2Addr, 300);
+		Assert.equal(expected, returned, "transfer should succeed");
+		Assert.equal(user1Bal-300, 700, "user 1 balance should be decremented by 300");
+		Assert.equal(user2Bal+300, 1300, "user 2 balance should be incremented by 300");
+	}
 	/*
 	function testTransfer() public {
 		ExposedLaikoin user1 = new ExposedLaikoin();
@@ -34,6 +47,17 @@ contract TestLaikoin {
 		Assert.equal(user2.balanceOf(user2Addr), 400, "User2 should have 500 tokens");
 	}
 	*/
+		/*
+		ExposedLaikoin user1 = new ExposedLaikoin();
+		ExposedLaikoin user2 = new ExposedLaikoin();
+		address user1Addr = user1.getAddress();
+		address user2Addr = user2.getAddress();
+		bool expectedPass = true;
+		bool returnedPass = user1.transfer(user2Addr, 500);
+		Assert.equal(returnedPass, expectedPass, "Transfer passed");
+		Assert.equal(user2.balanceOf(user2Addr), 1500, "user should have 1500 tokens");
+		//Assert.equal(user2.balanceOf(this), 2500, "User should have 2500 tokens");
+		*/
 
 	function testMint() public {
 		ExposedLaikoin user1 = new ExposedLaikoin();
