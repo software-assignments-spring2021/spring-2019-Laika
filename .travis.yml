@@ -1,5 +1,8 @@
 language: node_js
 
+notifications:
+  slack: nyu-agile-software:04E7Sc8kwphZ6MOgPVlchAMe
+
 sudo: required
 
 node_js:
