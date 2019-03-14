@@ -1,0 +1,32 @@
+language: node_js
+
+notifications:
+  slack: nyu-agile-software:04E7Sc8kwphZ6MOgPVlchAMe
+
+sudo: required
+
+node_js:
+  - "10.15.1"
+
+env:
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - build-essential
+      - g++-4.8
+
+before_install:
+  - export CXX="g++-4.8"
+  - npm install -g npm@latest
+  - npm install -g ganache-cli truffle
+
+install:
+  - npm install 
+
+script:
+  - ganache-cli &
+  - truffle test
