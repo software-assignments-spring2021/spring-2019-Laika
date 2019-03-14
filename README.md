@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/nyu-software-engineering/Laika.svg?branch=master)](https://travis-ci.com/nyu-software-engineering/Laika)
+
 ![Laika](logo.png)
 # Laika: A Crowd Donation Project
 
