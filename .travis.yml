@@ -11,10 +11,6 @@ sudo: required
 node_js:
   - "10.15.1"
 
-branches:
-  only:
-  - master
-
 env:
   - CXX=g++-4.8
 
