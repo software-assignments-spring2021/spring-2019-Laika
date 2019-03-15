@@ -4,7 +4,7 @@ notifications:
   slack:
     rooms:
 	    - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#group_laika
-	    - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#travis-results
+	    - nyu-agile-software:4Ll9V7RPK8fkqf2dGDvWiEGt#travis-results
 
 sudo: required
 
