@@ -3,8 +3,8 @@ language: node_js
 notifications:
   slack:
     rooms:
-	  - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#group_laika
-	  - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#travis-results
+	    - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#group_laika
+	    - nyu-agile-software:eQNY11hC0rKZuvSmEuaWGUjf#travis-results
 
 sudo: required
 
