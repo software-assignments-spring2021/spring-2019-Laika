@@ -39,7 +39,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="market.html">Market</a>
+
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " onclick="myFunction()" >Market</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
@@ -108,7 +109,21 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script>
+  function myFunction() {
+    var prom = prompt("Please enter your key","");
+   if(prom == null){
 
+   }
+    else if (prom == "smalldogs") {
+      var win = window.open("market.html");
+      win.focus();
+    }else{
+       prom = prompt("That is not the right key, please try again","");
+    }
+    }
+
+  </script>
 </body>
 
 </html>
