@@ -191,6 +191,11 @@ pre {
   overflow: auto;
 }
 
+.mailto{
+  display:block;
+  width:100px;
+  height:20px;
+}
 figure {
   margin: 0 0 1rem;
 }
