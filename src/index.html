@@ -1,62 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Laika</title>
+    <!DOCTYPE html>
+    <html lang="en">
 
 
-    <!-- Bootstrap -->
+    <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <title>Laika Market Place</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Market Place For 503(C)</h1>
-          <hr/>
-          <br/>
-        </div>
-      </div>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <div id="petsRow" class="row">
-        <!-- PETS LOAD HERE -->
-      </div>
-    </div>
+      <!-- Custom fonts for this template -->
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <div id="petTemplate" style="display: none;">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default panel-pet">
-          <div class="panel-heading">
-            <h3 class="panel-title">Scrappy</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
-            <br/><br/>
-            <strong>Item</strong>: <span class="pet-breed">Golden Retriever</span><br/>
-            <strong>Cost</strong>: <span class="pet-cost">3</span><br/>
-            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">Select</button>
+      <!-- Plugin CSS -->
+      <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+      <!-- Custom styles for this template -->
+      <link href="css/freelancer.min.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+    <main>
+      <!-- Portfolio Grid Section -->
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="text-center text-uppercase text-secondary mb-0">Market Place</h2>
+          <hr class="star-dark mb-5">
+
+          <div id="petsRow" class="row">
+            <!-- PETS LOAD HERE -->
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+        <div id="petTemplate" style="display: none;">
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="panel panel-default panel-pet">
+              <div class="panel-heading">
+                <h3 class="panel-title">Scrappy</h3>
+              </div>
+              <div class="panel-body">
+                <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+                <br/><br/>
+                <strong>Item</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+                <strong>Cost</strong>: <span class="pet-cost">3</span><br/>
+                <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+                <button class="btn btn-default btn-adopt" type="button" data-id="0">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+      </body>
+
+    </html>
