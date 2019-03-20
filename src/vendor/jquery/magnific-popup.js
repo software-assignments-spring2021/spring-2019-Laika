@@ -1,5 +1,5 @@
 /*! Magnific Popup - v1.1.0 - 2016-02-20
-* http://dimsemenov.com/plugins/magnific-popup/
+* http://dimsemenov.com/plugins/jquery/
 * Copyright (c) 2016 Dmitry Semenov; */
 ;(function (factory) { 
 if (typeof define === 'function' && define.amd) { 
@@ -458,7 +458,7 @@ MagnificPopup.prototype = {
 	updateSize: function(winHeight) {
 
 		if(mfp.isIOS) {
-			// fixes iOS nav bars https://github.com/dimsemenov/Magnific-Popup/issues/2
+			// fixes iOS nav bars https://github.com/dimsemenov/jquery/issues/2
 			var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 			var height = window.innerHeight * zoomLevel;
 			mfp.wrap.css('height', height);
@@ -855,7 +855,7 @@ $.magnificPopup = {
 	defaults: {
 
 		// Info about options is in docs:
-		// http://dimsemenov.com/plugins/magnific-popup/documentation.html#options
+		// http://dimsemenov.com/plugins/jquery/documentation.html#options
 
 		disableOn: 0,
 
