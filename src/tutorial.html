@@ -39,10 +39,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " onclick="myFunction()" >Market</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -50,47 +46,63 @@
             <a class="mailto" href="mailto:contact@test.com">Contact Us</a>
           </a>
 
-        </li>
+
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead bg-primary text-white text-center" style="padding-top:0px; padding-bottom:0px">
-    <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-      <h2 class="font-weight-light mb-0"> ... </h2>
-    </div>
-  </header>
+
+
 
   <!-- About Section -->
   <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
+      <h2 class="text-center text-uppercase text-white">Why Laika?</h2>
       <hr class="star-light mb-5">
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Laika was a Soviet space dog who became one of the first animals in space, and the first animal to orbit the Earth. Laika, a stray mongrel from the streets of Moscow, was selected to be the occupant of the Soviet spacecraft Sputnik 2 that was launched into outer space on 3 November 1957.</p>
+          <p class="lead">We use ETHERIUM text text text text</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">On 11 April 2008, Russian officials unveiled a monument to Laika. A small monument in her honour was built near the military research facility in Moscow that prepared Laika's flight to space. It portrayed a dog standing on top of a rocket. She also appears on the Monument to the Conquerors of Space in Moscow.</p>
+          <p class="lead">
+          We love etherium!We love etherium!We love etherium!We love etherium! </p>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="tutorial.html">
-          <i class="fas fa-arrow mr-2"></i>
-          Get Started
-        </a>
+
     </div>
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Get Started!</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">STEP 1
+               <ul>
+                 <li> Download MetaMask Extension  <button onclick="OpenInNewTabWinBrowser('https://metamask.io');"> HERE </button>
+                   </li>
+                   <li> Follow Metamask's instuctions and set up a wallet </li>
+                   <li> Connect to our network? Maybe TBD?  </li>
+
+                   </ul>
+
+               </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">
+            STEP 2
+            <ul>
+            <li> Select a charity to donate to!  </li> </ul>
+          </p>
+
+          </div>
+        </div>
+
+      </div>
   </section>
 
 
-      <div class="copyright py-4 text-center text-white">
-        <div class="container">
-          <small>Copyright &copy; Laika 2019</small>
-        </div>
-      </div>
 
 
 
@@ -109,21 +121,13 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
-  <script>
-  function myFunction() {
-    var prom = prompt("Please enter your key","");
-   if(prom == null){
 
-   }
-    else if (prom == "smalldogs") {
-      var win = window.open("market.html");
-      win.focus();
-    }else{
-       prom = prompt("That is not the right key, please try again","");
-    }
-    }
-
-  </script>
+<script>
+  function OpenInNewTabWinBrowser(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+</script>
 </body>
 
 </html>

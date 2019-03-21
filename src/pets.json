@@ -1,130 +1,146 @@
 [
   {
     "id": 0,
-    "name": "Frieda",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
+    "name": "Frieda The Vet",
+    "picture": "images/vet.jpg",
+    "cost": 3,
     "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama"
+    "location": "Union SQ."
   },
   {
     "id": 1,
-    "name": "Gina",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
+    "name": "Pedigree Food bag 10KG",
+    "picture": "images/food.jpg",
+    "cost": 3,
     "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia"
+    "location": "USA"
   },
   {
     "id": 2,
-    "name": "Collins",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 2,
+    "name": "Dog House",
+    "picture": "images/doghouse.jpg",
+    "cost": 2,
     "breed": "French Bulldog",
-    "location": "Freeburn, Idaho"
+    "location": "USA"
   },
   {
     "id": 3,
-    "name": "Melissa",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
+    "name": "Melissa the Vet",
+    "picture": "images/vet.jpg",
+    "cost": 2,
     "breed": "Boxer",
-    "location": "Camas, Pennsylvania"
+    "location": "East Village"
   },
   {
     "id": 4,
-    "name": "Jeanine",
+    "name": "Adoption Fees for Jeanine",
     "picture": "images/french-bulldog.jpeg",
-    "age": 2,
+    "cost": 2,
     "breed": "French Bulldog",
-    "location": "Gerber, South Dakota"
+    "location": "NoHo"
   },
   {
     "id": 5,
-    "name": "Elvia",
-    "picture": "images/french-bulldog.jpeg",
-    "age": 3,
+    "name": "Toys for Elvia",
+    "picture": "images/cat.jpg",
+    "cost": 3,
     "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois"
+    "location": "Park Slope"
   },
   {
     "id": 6,
-    "name": "Latisha",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 3,
+    "name": "Rescue Supplies",
+    "picture": "images/vet.jpg",
+    "cost": 3,
     "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana"
+    "location": "USA"
   },
   {
     "id": 7,
-    "name": "Coleman",
+    "name": "Vet fees for Coleman",
     "picture": "images/golden-retriever.jpeg",
-    "age": 3,
+    "cost": 3,
     "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau"
+    "location": "Williamsburg"
   },
   {
     "id": 8,
-    "name": "Nichole",
+    "name": "Vet fees for Nichole",
     "picture": "images/french-bulldog.jpeg",
-    "age": 2,
+    "cost": 2,
     "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii"
+    "location": "SoHo"
   },
   {
     "id": 9,
-    "name": "Fran",
+    "name": "Adoption Fees for Fran",
     "picture": "images/boxer.jpeg",
-    "age": 3,
+    "cost": 3,
     "breed": "Boxer",
-    "location": "Matheny, Utah"
+    "location": "Brox"
+  },
+  {
+    "id": 9,
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   },
   {
     "id": 10,
-    "name": "Leonor",
-    "picture": "images/boxer.jpeg",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana"
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   },
   {
     "id": 11,
-    "name": "Dean",
-    "picture": "images/scottish-terrier.jpeg",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Windsor, Montana"
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   },
   {
     "id": 12,
-    "name": "Stevenson",
+    "name": "LOREM IPSUM",
     "picture": "images/french-bulldog.jpeg",
-    "age": 3,
+    "cost": 2,
     "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada"
+    "location": "SoHo"
   },
   {
     "id": 13,
-    "name": "Kristina",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 4,
-    "breed": "Golden Retriever",
-    "location": "Sultana, Massachusetts"
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   },
   {
     "id": 14,
-    "name": "Ethel",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Broadlands, Oregon"
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   },
   {
     "id": 15,
-    "name": "Terry",
-    "picture": "images/golden-retriever.jpeg",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
+  },
+  {
+    "id": 16,
+    "name": "LOREM IPSUM",
+    "picture": "images/french-bulldog.jpeg",
+    "cost": 2,
+    "breed": "French Bulldog",
+    "location": "SoHo"
   }
 ]
