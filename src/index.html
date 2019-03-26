@@ -1,62 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Laika</title>
 
+<head>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+  <title>Laika</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
+
+  <!-- Plugin CSS -->
+
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary  text-uppercase" id="mainNav">
     <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Laika</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+        data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " onclick="myFunction()">Market</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" <a class="mailto"
+              href="mailto:contact@test.com">Contact Us</a>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center" style="padding-top:0px; padding-bottom:0px">
+    <div class="container">
+      <img class="img-fluid mb-5 d-block mx-auto" src="images/profile.png" alt="">
+      <h2 class="font-weight-light mb-0"> ... </h2>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">About</h2>
+      <hr class="star-light mb-5">
       <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Pete's Pet Shop</h1>
-          <hr/>
-          <br/>
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">
+            Lack of transparency in charitable donations has deterred many from making a donation and
+            organization from being held accountable for their actions. We want to help increase transparency to
+            encourage more donation and bring charities closer to achieving their missions.
+          </p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">
+            Laika Crowd Funding, strives to become a powerful platform where approved 503c organizations
+            can sign up to receive funds using crypto and a blockchain – anyone with a computer can help raise funds
+            with full transparency. Currently, there are some websites which users can mine “Monero” for a good cause.
+            However, the lack of transparency of “Monero” leaves donors wondering where their contributions actually go.
+          </p>
         </div>
       </div>
-
-      <div id="petsRow" class="row">
-        <!-- PETS LOAD HERE -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="tutorial.html">
+          <i class="fas fa-arrow mr-2"></i>
+          Get Started
+        </a>
       </div>
-    </div>
+  </section>
 
-    <div id="petTemplate" style="display: none;">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default panel-pet">
-          <div class="panel-heading">
-            <h3 class="panel-title">Scrappy</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
-            <br/><br/>
-            <strong>Breed</strong>: <span class="pet-breed">Golden Retriever</span><br/>
-            <strong>Age</strong>: <span class="pet-age">3</span><br/>
-            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Laika 2019</small>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.easing.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="vendor/jquery/magnific-popup.js"></script>
+  <script src="js/freelancer.min.js"></script>
+  <script>
+    function myFunction() {
+      var prom = prompt("Please enter your key", "");
+      if (prom == null) {
+
+      }
+      else if (prom == "smalldogs") {
+        var win = window.open("market.html");
+        win.focus();
+      } else {
+        prom = prompt("That is not the right key, please try again", "");
+      }
+    }
+
+  </script>
+</body>
+
 </html>

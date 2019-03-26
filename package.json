@@ -14,8 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.0.2",
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4",
     "lite-server": "^2.3.0",
+    "mocha": "^6.0.2",
     "nyc": "^13.3.0"
   },
   "dependencies": {

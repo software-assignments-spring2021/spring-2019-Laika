@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
+  <p id="demo"></p>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
-  <title>Laika Market Place</title>
+  <title>Laika</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,131 +19,89 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Laika</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Home</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary  text-uppercase" id="mainNav" style="align:right" >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Laika</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left:650px">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="market.html">Market</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+              <a class="mailto" href="mailto:contact@test.com">Contact Us</a>
+            </a>
 
-        </ul>
+
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav> -->
-<main>
+    </nav>
+
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Market Place</h2>
       <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-        	<a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-          <a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-          <a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-          <a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-          <a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <h1>Sample item 1</h1>
-          <a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
+
+      <div id="petsRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="petTemplate" style="display: none; margin">
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Item</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+            <strong>Cost</strong>: <span class="pet-cost">3</span><br/>
+            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+            <button class="btn btn-default btn-adopt" type="button" data-id="0">Select</button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- <main>
-  	<h1>Sample item 1</h1>
-  	<a href="#0" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-    <h1>Sample item 2</h1>
-    <a href="#1" class="cd-add-to-cart" data-price="2.99">Add To Cart</a>
-    <h1>Sample item 3</h1>
-    <a href="#2" class="cd-add-to-cart" data-price="2.99">Add To Cart</a> -->
-
-  </main>
-  <div class="cd-cart-container empty">
-  	<a href="#0" class="cd-cart-trigger">
-  		Cart
-  		<ul class="count"> <!-- cart items count -->
-  			<li>0</li>
-  			<li>0</li>
-  		</ul> <!-- .count -->
-  	</a>
-
-  	<div class="cd-cart">
-  		<div class="wrapper">
-  			<header>
-  				<h2>Cart</h2>
-  				<span class="undo">Item removed. <a href="#0">Undo</a></span>
-  			</header>
-
-  			<div class="body">
-  				<ul>
-  					<!-- products added to the cart will be inserted here using JavaScript -->
-  				</ul>
-  			</div>
-
-  			<footer>
-  				<a href="#0" class="checkout btn"><em>Checkout $<span>0</span> </em></a>
-  			</footer>
-  		</div>
-  	</div> <!-- .cd-cart -->
-  </div> <!-- cd-cart-container -->
+  </div>
+</section>
+</main>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.easing.min.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="vendor/jquery/magnific-popup.js"></script>
+<script src="js/freelancer.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
 
 
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <script src="js/freelancer.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script>
-  	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-  </script>
-  <script src="js/main.js"></script> <!-- Resource jQuery -->
-
-</body>
+  </body>
 
 </html>
