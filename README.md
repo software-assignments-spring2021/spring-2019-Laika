@@ -63,9 +63,9 @@ Running Smart Contract tests
 
 * migrate
 
-* cd client
+* cd src
 
-* npm run start
+* npm run devgit
 
 ## Built With
 
