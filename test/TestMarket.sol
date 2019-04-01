@@ -14,6 +14,11 @@ contract TestMarket {
         dummyAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA);
         customerAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB);
         market.registerProduct(5, "test product", "test description", 22);
+        market.registerCustomer(customerAddress, "Masaki", 1000);
+    }
+
+    function testGetBalance(){
+        
     }
 
     function testRegisterProduct() {
@@ -41,8 +46,7 @@ contract TestMarket {
     }
 
     function testPurchaseProduct() public {
-        address buyer = address(this);
-        Market _market = new Market();
-        
+        bool expected = market.buyProduct(5);
+        Assert.isTrue(expected, "Customer should be able to purchase dogfood(id=5) product");        
     }
 }
