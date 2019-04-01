@@ -18,7 +18,11 @@ contract TestMarket {
     }
 
     function testGetBalance(){
-        
+        market = new Market();
+        market.registerCustomer(address(this), "Bob", 2000);
+        uint256 expectedBalance = 2000;
+        uint256 actualBalance = market.getBalance();
+        Assert.equal(expectedBalance, actualBalance, "Customer should get balance 2000");
     }
 
     function testRegisterProduct() {
