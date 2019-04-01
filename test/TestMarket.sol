@@ -39,4 +39,10 @@ contract TestMarket {
         var (_name, _description, _price) = market.getProduct(5);
         Assert.equal(_name, expected_product_price, "Market should return product price");
     }
+
+    function testPurchaseProduct() public {
+        address buyer = address(this);
+        Market _market = new Market();
+        
+    }
 }
