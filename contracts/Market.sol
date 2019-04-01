@@ -9,6 +9,7 @@ contract Market {
 
     event PurchaseCompleted(address customer, uint256 payment);
     event PurchaseFailed(address customer, uint256 customerBalance, uint256 payment);
+    event ProductRegistered(uint productId);
 
     struct Customer {
         address adr;
@@ -45,4 +46,14 @@ contract Market {
         emit PurchaseFailed(msg.sender, customer.balance, product.price);
         return false;
     }
+
+    function registerProduct(uint256 id, bytes32 name, bytes32 description, uint256 price) public returns (bool success) {
+        products[id] = Product(id, name, description, price);
+        if (price > 0) {
+            emit ProductRegistered(id);
+            return true;
+        }
+        return false;
+    }
+
 }
