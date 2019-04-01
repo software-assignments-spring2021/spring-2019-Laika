@@ -9,4 +9,19 @@ contract Market {
 
     event PurchaseCompleted(address customer, uint256 payment);
     event PurchaseFailed(address customer, uint256 customerBalance, uint256 payment);
+
+    struct Customer {
+        address adr;
+        bytes32 name;
+        uint256 balance;
+    }
+
+    struct Product {
+        uint256 id;
+        bytes32 name;
+        bytes32 description;
+        uint256 price;
+    }
+
+    
 }
