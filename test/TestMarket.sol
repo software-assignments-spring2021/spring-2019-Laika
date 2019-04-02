@@ -43,11 +43,11 @@ contract TestMarket {
         Assert.equal(_name, expected_product_description, "Market should return product description");
     }
 
-    function testGetProductInfoPrice() public {
-        uint256 expected_product_price = 22;
-        (bytes32 _name, bytes32 _description, uint256 _price) = market.getProductInfo(5);
-        Assert.equal(_name, expected_product_price, "Market should return product price");
-    }
+    // function testGetProductInfoPrice() public {
+    //     uint256 expected_product_price = 22;
+    //     (bytes32 _name, bytes32 _description, uint256 _price) = market.getProductInfo(5);
+    //     Assert.equal(_name, expected_product_price, "Market should return product price");
+    // }
 
     function testPurchaseProduct() public {
         bool expected = market.buyProduct(5);
