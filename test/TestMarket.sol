@@ -7,17 +7,17 @@ import "truffle/DeployedAddresses.sol";
 
 contract TestMarket {
 
-    Market _market = Market(DeployedAddresses.Market());
+    Market market = Market(DeployedAddresses.Market());
 
-    function beforeAll() {
+    function beforeAll() public {
         market = new Market();
-        dummyAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA);
-        customerAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB);
+        address dummyAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA);
+        address customerAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB);
         market.registerProduct(5, "test product", "test description", 22);
         market.registerCustomer(customerAddress, "Masaki", 1000);
     }
 
-    function testGetBalance(){
+    function testGetBalance() public {
         market = new Market();
         market.registerCustomer(address(this), "Bob", 2000);
         uint256 expectedBalance = 2000;
@@ -25,7 +25,7 @@ contract TestMarket {
         Assert.equal(expectedBalance, actualBalance, "Customer should get balance 2000");
     }
 
-    function testRegisterProduct() {
+    function testRegisterProduct() public {
         bool expected = true;
         bool result = market.registerProduct(20, "dogfood", "it is very tasty dogfood", 99);
         Assert.equal(result, expected, "Market should register a product");
