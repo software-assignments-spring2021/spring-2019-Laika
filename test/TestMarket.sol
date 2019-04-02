@@ -11,16 +11,12 @@ contract TestMarket {
 
     function beforeAll() public {
         market = new Market();
-        address dummyAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA);
-        address customerAddress = address(0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB);
         market.registerProduct(5, "test product", "test description", 22);
-        market.registerCustomer(customerAddress, "Masaki", 1000);
+        market.registerCustomer(address(this), "Masaki", 1000);
     }
 
     function testGetBalance() public {
-        market = new Market();
-        market.registerCustomer(address(this), "Bob", 2000);
-        uint256 expectedBalance = 2000;
+        uint256 expectedBalance = 1000;
         uint256 actualBalance = market.getBalance();
         Assert.equal(expectedBalance, actualBalance, "Customer should get balance 2000");
     }
