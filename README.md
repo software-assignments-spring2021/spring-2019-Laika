@@ -65,7 +65,7 @@ Running Smart Contract tests
 
 * cd src
 
-* npm run devgit
+* npm run dev
 
 ## Built With
 
