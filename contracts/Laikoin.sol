@@ -1,23 +1,11 @@
 pragma solidity ^0.5.0;
 
-// import "node_modules/openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
-import "node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol";
-
 /**
  * @title Laikoin - ERC20 token born for tracking usage after donation.
 
  * @notice
  Inspired by OpenZeppelin-Solidity ERC20 Token
 */
-
-/** @dev Safe '>' implemented */
-library ExtendedMath {
-    //return the smaller of the two inputs (a or b)
-    function limitLessThan(uint a, uint b) internal pure returns (uint c) {
-        if(a > b) return b;
-        return a;
-    }
-}
 
 /** @dev BenevoToken contract extends the ERC20 Interface */
 contract ERC20Interface {
@@ -37,9 +25,6 @@ contract ERC20Interface {
 // }
 
 contract Laikoin is ERC20Interface {
-    //all arithmetic operation in this contract uses Openzeppelin's SafeMath library
-    using   SafeMath for uint256;
-    // using ExtendedMath for uint;
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -124,7 +109,7 @@ contract Laikoin is ERC20Interface {
      * @param value uint256 the amount of tokens to be transferred
      */
     function transferFrom(address from, address to, uint256 value) public returns (bool) {
-        _allowed[from][msg.sender] = _allowed[from][msg.sender].sub(value);
+        _allowed[from][msg.sender] = _allowed[from][msg.sender] - value;
         transfer(to, value);
         emit Approval(from, msg.sender, _allowed[from][msg.sender]);
         return true;
@@ -143,7 +128,7 @@ contract Laikoin is ERC20Interface {
     function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
         require(spender != address(0));
 
-        _allowed[msg.sender][spender] = _allowed[msg.sender][spender].add(addedValue);
+        _allowed[msg.sender][spender] = _allowed[msg.sender][spender] + addedValue;
         emit Approval(msg.sender, spender, _allowed[msg.sender][spender]);
         return true;
     }
@@ -161,7 +146,7 @@ contract Laikoin is ERC20Interface {
     function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
         require(spender != address(0));
 
-        _allowed[msg.sender][spender] = _allowed[msg.sender][spender].sub(subtractedValue);
+        _allowed[msg.sender][spender] = _allowed[msg.sender][spender] - subtractedValue;
         emit Approval(msg.sender, spender, _allowed[msg.sender][spender]);
         return true;
     }
@@ -175,8 +160,8 @@ contract Laikoin is ERC20Interface {
     function _transfer(address from, address to, uint256 value) internal {
         require(to != address(0));
 
-        _balances[from] = _balances[from].sub(value);
-        _balances[to] = _balances[to].add(value);
+        _balances[from] = _balances[from] - value;
+        _balances[to] = _balances[to] + value;
         emit Transfer(from, to, value);
     }
 
@@ -190,8 +175,8 @@ contract Laikoin is ERC20Interface {
     function _mint(address account, uint256 value) internal {
         require(account != address(0));
 
-        _totalSupply = _totalSupply.add(value);
-        _balances[account] = _balances[account].add(value);
+        _totalSupply = _totalSupply + value;
+        _balances[account] = _balances[account] + value;
         emit Transfer(address(0), account, value);
     }
 }
