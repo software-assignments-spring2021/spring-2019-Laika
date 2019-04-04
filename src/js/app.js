@@ -15,6 +15,9 @@ App = {
         petTemplate.find('.pet-cost').text(data[i].cost);
         petTemplate.find('.pet-location').text(data[i].location);
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        petTemplate.find('.btn-adopt').on("click",function(){
+          //call metamask
+        });
 
         petsRow.append(petTemplate.html());
       }
@@ -53,16 +56,9 @@ App = {
       // Get the necessary contract artifact file and instantiate it with truffle-contract
       var LaikoinArtifact = data;
       App.contracts.Laikoin = TruffleContract(LaikoinArtifact);
-    
+
       // Set the provider for our contract
       App.contracts.Laikoin.setProvider(App.web3Provider);
-   
-      // Use our contract to retrieve and mark the adopted pets
-      return App.markAdopted();
-    });
-          // Use our contract to retrieve and mark the adopted pets
-          return App.markAdopted();
-      });
 
       return App.bindEvents();
   },
