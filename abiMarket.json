@@ -1,0 +1,240 @@
+ [
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "store_balance",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xc7b09d27"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "store_name",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xf2663f18"
+  },
+  {
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "customer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "payment",
+        "type": "uint256"
+      }
+    ],
+    "name": "PurchaseCompleted",
+    "type": "event",
+    "signature": "0x2cdcd36462682c80d338eaafb121846413e1cff6fb13c3b013080acc63e70e4e"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "customer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "customerBalance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "payment",
+        "type": "uint256"
+      }
+    ],
+    "name": "PurchaseFailed",
+    "type": "event",
+    "signature": "0xc547762980714d1628190f7aedb409be6a9d1d0cad234f7064c64ecefbe22734"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "productId",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProductRegistered",
+    "type": "event",
+    "signature": "0xbcc0e36116309da282dcf13bde248ef63930f4114b68999c8570a86ffb3ab305"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "CustomerRegistered",
+    "type": "event",
+    "signature": "0x155e8619f4d23b96769599cb9af87da3e06a360082869c18578011da9a06e670"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "customer",
+        "type": "address"
+      }
+    ],
+    "name": "CustomerRegistrationFailed",
+    "type": "event",
+    "signature": "0x7c66b00fc05577d946381dc5b311ac0e6f93dbdc6f1b7b6a570ccdd7dbed6a03"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getBalance",
+    "outputs": [
+      {
+        "name": "_balance",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x12065fe0"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getProductInfo",
+    "outputs": [
+      {
+        "name": "name",
+        "type": "bytes32"
+      },
+      {
+        "name": "description",
+        "type": "bytes32"
+      },
+      {
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x79a85e6c"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyProduct",
+    "outputs": [
+      {
+        "name": "success",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x8642269e"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "name": "name",
+        "type": "bytes32"
+      },
+      {
+        "name": "description",
+        "type": "bytes32"
+      },
+      {
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "registerProduct",
+    "outputs": [
+      {
+        "name": "success",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x32d338f6"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_address",
+        "type": "address"
+      },
+      {
+        "name": "_name",
+        "type": "bytes32"
+      },
+      {
+        "name": "_balance",
+        "type": "uint256"
+      }
+    ],
+    "name": "registerCustomer",
+    "outputs": [
+      {
+        "name": "success",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x21527090"
+  }
+]

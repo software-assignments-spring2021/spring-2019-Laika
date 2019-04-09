@@ -19,7 +19,7 @@ Only members of Laika Crowd Donation Project shall directly contribute. Please c
 **commit comments**
 "add, fix, refactor, test" or any other short one word followed by ":" and description about the commit.
 
-e.g. 
+e.g.
 ```
 git commit -m”add: interface functions”
 git commit -m”refactor: made transfer function modular”
