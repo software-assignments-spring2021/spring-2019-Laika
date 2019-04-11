@@ -22,7 +22,7 @@ contract TestCharity {
     function testGetTnr() public {
         Charity cha = new Charity();
         string expected = "What is TNR? Hundreds of thousands of stray cats live on Brooklyn’s streets. Some are friendly, but others have been on their own too long to go back to living with humans. They live in colonies, surviving as best they can. In the past, these unadoptable animals would often be caught and killed. But that’s not only cruel, it simply doesn’t work: more cats arrive to fill up the vacuum. So what can be done? More and more municipalities, including New York, now endorse “Trap, Neuter, Return,” or TNR. Neighborhood volunteers, aided by animal rescue organizations, trap the cats in a colony and have them neutered or spayed. They are then “eartipped” – the tip of one ear removed painlessly – for identification as part of a TNR colony. Young kittens and friendly animals are adopted out. The rest are returned to wherever they were found – often a backyard, building courtyard, park or alleyway. Volunteers “manage” the colony, ensuring that the cats are regularly fed and warm shelters provided. Because they are not reproducing, the colony will eventually reduce naturally.";
-        string result = cha.getShirtIntro();
-        Assert.equal(expected, result, "should return short intro about Brooklyn Animal Action");
+        string result = cha.getTnr();
+        Assert.equal(expected, result, "should return Tnr about Brooklyn Animal Action");
     }
 }
