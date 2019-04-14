@@ -16,6 +16,11 @@ contract Charity {
     string public shortIntro;
     string public about;
 
+    function setCharity(string _shortIntro, string _about) public {
+        shortIntro = _shortIntro;
+        about = _about;
+    }
+
     function getShirtIntro() public view returns (string memory){
         return (shortIntro);
     }
