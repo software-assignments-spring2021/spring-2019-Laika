@@ -6,7 +6,7 @@ contract CharityFactory {
 
     fuction createChildContract ()
 
-    function getShirtIntro() public view returns (string memory){
+    function getShortIntro() public view returns (string memory){
         return (shortIntro);
     }
 
@@ -21,7 +21,7 @@ contract Charity {
         about = _about;
     }
 
-    function getShirtIntro() public view returns (string memory){
+    function getShortIntro() public view returns (string memory){
         return (shortIntro);
     }
 
