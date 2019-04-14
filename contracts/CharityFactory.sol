@@ -12,3 +12,16 @@ contract CharityFactory {
 
 }
 
+contract Charity {
+    string public shortIntro;
+    string public about;
+
+    function getShirtIntro() public view returns (string memory){
+        return (shortIntro);
+    }
+
+    function getAbout() public view returns (string memory){
+        return (about);
+    }
+
+}
