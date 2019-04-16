@@ -5,8 +5,8 @@ contract CharityFactory {
     address[] charities;
 
     function createChildContract(string memory shortIntro, string memory about) public {
-        address newCharity = new Charity(shortIntro, about, msg.sender);
-        charities.push(newCharity);
+        Charity newCharity = new Charity(shortIntro, about, msg.sender);
+        charities.push(address(newCharity));
     }
 }
 
@@ -15,7 +15,7 @@ contract Charity {
     string public about;
     address public owner;
 
-    function setCharity(string _shortIntro, string _about, string _owner) public {
+    constructor (string memory _shortIntro, string memory _about, address _owner) public {
         shortIntro = _shortIntro;
         about = _about;
         owner = _owner;
@@ -29,7 +29,7 @@ contract Charity {
         return (about);
     }
 
-    function getOwner() public view returns (string memory){
+    function getOwner() public view returns (address){
         return (owner);
     }
 
