@@ -21,9 +21,10 @@
     "nyc": "^13.3.0"
   },
   "dependencies": {
+    "dotenv": "^7.0.0",
     "npm": "^6.9.0",
     "openzeppelin-solidity": "^2.1.3",
-    "truffle-hdwallet-provider": "^1.0.7"
+    "truffle-hdwallet-provider": "^1.0.0-web3one.5"
   },
   "repository": {
     "type": "git",
