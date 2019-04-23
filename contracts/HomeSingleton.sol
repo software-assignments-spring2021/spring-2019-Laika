@@ -53,4 +53,8 @@ contract HomeSingleton is Home {
     }
     return _myHome;
   }
+
+  function isInstantiated() public view returns (bool) {
+    return _instantiated;
+  }
 }
