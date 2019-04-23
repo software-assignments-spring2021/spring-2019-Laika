@@ -91,37 +91,51 @@
         <h2 class="text-center text-uppercase text-white">Get Started!</h2>
         <hr class="star-light mb-5">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
+          <div class="col-lg-4 mr-auto">
             <p class="lead">STEP 1
+              <ul>
+                <li> Download Ganache <button onclick="OpenInNewTabWinBrowser('https://truffleframework.com/ganache');"> HERE
+                  </button>
+                </li>
+                <li> Follow the instructions in the installer to setup Ganache </li>
+                <li> Click on your accounts </li>
+                <li> Check what RPC Server your config is set to (this will be your local net) </li>
+                <li> Click on the Key icon and save your private key to one of your wallets </li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">STEP 2
               <ul>
                 <li> Download MetaMask Extension <button onclick="OpenInNewTabWinBrowser('https://metamask.io');"> HERE
                   </button>
                 </li>
                 <li> Follow Metamask's instuctions and set up a wallet </li>
-                <li> Connect to our network? Maybe TBD? </li>
+                <li> Click on custom RPC </li>
+                <li> Go to New Network and type your RPC from Ganache: eg. http://localhost:7545 </li>
+                <li> Click on the ball circle on the right hand corner and click on import account </li>
+                <li> Type your private key then click import </li>
 
               </ul>
 
             </p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">
-              STEP 2
+            <p class="lead">STEP 3
               <ul>
                 <li> Select a charity to donate to! </li>
+                <li> Go to Market Place </li>
+                <li> Click on an item </li>
+                <li> Click on select </li>
+                <li> The status should change to "success" </li>
+                <li> Confirm the transaction on MetMask </li>
+                <li> Review transaction history on Ganache to make sure everything went as planned </li>
               </ul>
             </p>
-
           </div>
         </div>
-
       </div>
     </section>
-
-
-
-
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
