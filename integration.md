@@ -6,7 +6,7 @@ Dependencies:
 3. metamask
 4. lite-server
 
-On Termial:
+On Terminal:
 1. cd into repo root
 2. npm install
 3. truffle compile
