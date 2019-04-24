@@ -6,6 +6,4 @@ import "contracts/CharityFactory.sol";
 
 contract TestCharityFactory {
 
-  function beforeAll() public {
-  }
 }
