@@ -10,6 +10,10 @@ contract CharityFactory {
         return true;
     }
 
+    function getCharities() public view returns(address[] memory){
+        return (charities);
+    }
+
 }
 
 contract Charity {
