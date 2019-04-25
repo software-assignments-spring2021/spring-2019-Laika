@@ -14,4 +14,11 @@ contract TestHomeSingleton {
     bool returnedStatus = thisHome.isInstantiated();
     Assert.equal(expectedStatus, returnedStatus, "Instance should not exist!");
   }
+
+  function testIsInstantiated2() public {
+    bool expectedStatus = true;
+    HomeSingleton testHome = thisHome.getInstance();
+    bool returnedStatus = thisHome.isInstantiated();
+    Assert.equal(expectedStatus, returnedStatus, "Instance should exist!");
+  }
 }
