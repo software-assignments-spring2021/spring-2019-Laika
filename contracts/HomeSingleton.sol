@@ -8,7 +8,7 @@ contract Home {
   address public owner;
 
   //Home constructor
-  constructor (string memory _name, string memory _description, string memory _about, address _owner) public {
+  constructor (string memory _name, string memory _description, string memory _about, address _owner) internal {
     name = _name;
     description = _description;
     about = _about;
@@ -37,24 +37,15 @@ contract Home {
 //Inheritance allows for using Home functionality
 contract HomeSingleton is Home {
   //Singleton variables
+  string public name;
+  string public description;
+  string public about;
+  address public owner;
   bool private _instantiated = false;
-  Home private _myHome;
+  HomeSingleton private _myHome;
+
+  constructor (string memory _name, string memory _description, string memory _about, address _owner) public Home(_name, _description, _about, _owner){}
 
   //Regulates calling new Home contract
-  function callCreate() private returns (Home){
-    return new Home(name, description, about, msg.sender);
-  }
 
-  //creates and checks for instance
-  function getInstance() public returns (Home) {
-    if (_instantiated == false){
-      _instantiated = true;
-      _myHome = callCreate();
-    }
-    return _myHome;
-  }
-
-  function isInstantiated() public view returns (bool) {
-    return _instantiated;
-  }
 }

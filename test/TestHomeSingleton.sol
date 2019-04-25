@@ -3,10 +3,11 @@ pragma solidity ^0.5.0;
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "contracts/HomeSingleton.sol";
+import "contracts/ExposedSingleton.sol";
 
-contract testHomeSingleton {
+contract TestHomeSingleton {
   address expectedOwner = address(this);
-  HomeSingleton thisHome = new HomeSingleton();
+  ExposedSingleton thisHome = new ExposedSingleton();
 
   function testIsInstantiated() public {
     bool expectedStatus = false;
