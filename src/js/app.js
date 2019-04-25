@@ -30,7 +30,7 @@ App = {
       //�NOTE: not suitable for production!
       // NOTE: web3Provider=null is member of App
       App3.web3Provider = new
-        Web3.providers.HttpProvider('http://localhost:7545');
+        Web3.providers.HttpProvider('http://localhost:8545');
     }
 
     // initialize contract by App function below
@@ -85,7 +85,7 @@ App = {
       // so disable its adopt button, and change the button text to 'Success'
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+          $('.panel-pet').eq(i).find('button');
         }
       }
     }).catch(function(err) {
