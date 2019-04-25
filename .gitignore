@@ -3,3 +3,4 @@ build/contracts/
 .nyc_output/
 .DS_Store
 secrets.json
+config.json
