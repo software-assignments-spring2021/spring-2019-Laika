@@ -2,3 +2,8 @@ BrooklynAnimalAction.sol
 Contract: 0xf2089f92e2336dd8b01170d26b21176457b0b5eb
 Tx: 0x005b19abcc98adee1ac83c49b96d2e333b9d120432812eb899d15cb1b4e5a996
 https://rinkeby.etherscan.io/address/0xf2089f92e2336dd8b01170d26b21176457b0b5eb#code
+
+CharityFactory
+Contract: 0x9D776E2FC0C71607Fc35EEAB232FB71AB53D7905
+Tx: 0x6888ebce5ba9eaa641d4090982c1b35b9a42c2564ea04eba88bf2d44e7cbd067
+https://rinkeby.etherscan.io/address/0x9d776e2fc0c71607fc35eeab232fb71ab53d7905#code
