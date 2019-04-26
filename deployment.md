@@ -7,3 +7,9 @@ CharityFactory
 Contract: 0x9D776E2FC0C71607Fc35EEAB232FB71AB53D7905
 Tx: 0x6888ebce5ba9eaa641d4090982c1b35b9a42c2564ea04eba88bf2d44e7cbd067
 https://rinkeby.etherscan.io/address/0x9d776e2fc0c71607fc35eeab232fb71ab53d7905#code
+
+ExposedLaikoin
+Contract:0xcad5ea6196c9cffb21b6c0265514facd75cfdd06
+Tx:0x8a688b14ab4299ad8772539758ca845233fb9896d2f2e636f9fe6b76cd4b2a21
+https://rinkeby.etherscan.io/address/0x4cc3bc0069e1e9d9d8a2c7316cd2bc1660aed5a3#code
+
