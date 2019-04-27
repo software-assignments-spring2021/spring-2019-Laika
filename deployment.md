@@ -13,3 +13,7 @@ Contract:0xcad5ea6196c9cffb21b6c0265514facd75cfdd06
 Tx:0x8a688b14ab4299ad8772539758ca845233fb9896d2f2e636f9fe6b76cd4b2a21
 https://rinkeby.etherscan.io/address/0x4cc3bc0069e1e9d9d8a2c7316cd2bc1660aed5a3#code
 
+Laikoin
+Contract:0x3c0c3f4d16945d91f154a367677f0d616569e66c
+Tx:0x65f588ff3f3f573c6ad90ba7041e58c8e4e7e465e663d6cdede697755a41eb0f
+https://rinkeby.etherscan.io/address/0x3c0c3f4d16945d91f154a367677f0d616569e66c#code
