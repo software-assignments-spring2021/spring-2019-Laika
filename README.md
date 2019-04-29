@@ -92,3 +92,9 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Acknowledgments
 * The open source UI framework is provided by [Black Rock Digital] (http://blackrockdigital.io/)
 * The open source market place JQuery shopping cart is provided by [Cody House] (https://codyhouse.co/)
+
+## Demo
+Below will all be Demos of our smart contract in action
+
+### See deployed Smart Contracts 
+![](gifs/seeDeployedContract.gif)
