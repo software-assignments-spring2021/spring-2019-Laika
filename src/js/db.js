@@ -4,17 +4,19 @@ const mongoose = require('mongoose');
 
 //const dbconf = '';
 
-// my schema goes here!
-const Item = new mongoose.Schema({
-    title: String,
-    description: String,
-    summary: String,
-    notes: [String]
+const Client = new mongoose.Schema({
+    id: number
 });
 
-mongoose.model('Item', Item);
+const Corp = new mongoose.Schema({
+    id: number,
+    email: string
+});
+
+mongoose.model('Client', Client);
+mongoose.model('Copr', Corp);
 
 
-mongoose.connect('mongodb://localhost/dnd', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/laika', { useNewUrlParser: true });
 
 //mongoose.connect(dbconf);
