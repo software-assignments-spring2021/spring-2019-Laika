@@ -4,10 +4,16 @@ contract CharityFactory {
 
     address[] charities;
 
-    function createChildContract(string memory shortIntro, string memory about) public {
+    function createChildContract(string memory shortIntro, string memory about) public returns (bool){
         Charity newCharity = new Charity(shortIntro, about, msg.sender);
         charities.push(address(newCharity));
+        return true;
     }
+
+    function getCharities() public view returns(address[] memory){
+        return (charities);
+    }
+
 }
 
 contract Charity {
