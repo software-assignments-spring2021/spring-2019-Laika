@@ -294,19 +294,15 @@
         prom = prompt("That is not the right key, please try again", "");
       }
     }
-
+    //pop up window asking the user for hash id
     function donate() {
         var enter = prompt("Please enter your hash", "");
-        if (enter == null) {
-
+        var pattern = [a-zA-z0-9];
+        var amount;
+        
+        if (enter != null) {
+           enter = prompt("Please enter the amount you want to donate", "");
         }
-        // else if (enter == "smalldogs") {
-        //   var win = window.open("market.html");
-        //   win.focus();
-        // } 
-        // else {
-        //   enter = prompt("", "");
-        // }
       }
 
   </script>
