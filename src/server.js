@@ -47,7 +47,25 @@ passport.deserializeUser(function (id, done) {
 login(passport);
 signup(passport);
 
+/* Handle Login POST */
+app.post('/login', passport.authenticate('login', {
+    successRedirect: '/profile',
+    failureRedirect: '/',
+    failureFlash: true
+}));
 
+/* Handle Registration POST */
+app.post('/signup', passport.authenticate('signup', {
+    successRedirect: '/profile',
+    failureRedirect: '/signup',
+    failureFlash: true
+}));
+
+/* Handle Logout */
+app.get('/signout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port);
