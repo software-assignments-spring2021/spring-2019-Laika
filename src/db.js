@@ -5,16 +5,16 @@ const mongoose = require('mongoose');
 //const dbconf = '';
 
 const Client = new mongoose.Schema({
-    id: number
+    id: Number
 });
 
 const Corp = new mongoose.Schema({
-    id: number,
-    email: string
+    id: Number,
+    email: String
 });
 
 mongoose.model('Client', Client);
-mongoose.model('Copr', Corp);
+mongoose.model('Corp', Corp);
 
 
 mongoose.connect('mongodb://localhost/laika', { useNewUrlParser: true });
