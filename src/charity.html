@@ -155,9 +155,9 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/cabin.png" alt="">
             <p class="mb-5">The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Donate</a>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()" >
+              <i class="fa fa-close"></i>  Donate</a>
+              
 
           </div>
         </div>
@@ -294,6 +294,20 @@
         prom = prompt("That is not the right key, please try again", "");
       }
     }
+
+    function donate() {
+        var enter = prompt("Please enter your hash", "");
+        if (enter == null) {
+
+        }
+        // else if (enter == "smalldogs") {
+        //   var win = window.open("market.html");
+        //   win.focus();
+        // } 
+        // else {
+        //   enter = prompt("", "");
+        // }
+      }
 
   </script>
 </body>
