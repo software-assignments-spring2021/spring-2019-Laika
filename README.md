@@ -104,3 +104,6 @@ Below will all be Demos of our smart contract in action
 
 ### Send Laikoin from one address to another
 ![](gifs/LaikoinTransfer1.gif)
+
+### Check the balance of recipient (the Recipient started with balance of 1)
+![](gifs/LaikoinTransfer2.gif)
