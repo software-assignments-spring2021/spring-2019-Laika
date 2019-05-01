@@ -113,3 +113,6 @@ Below will all be Demos of our smart contract in action
 
 ### See registered product
 ![](gifs/registerProduct.gif)
+
+### Buy a product
+![](gifs/registerProduct.gif)
