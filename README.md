@@ -110,3 +110,6 @@ Below will all be Demos of our smart contract in action
 
 ### Register a product on Market Smart Contract
 ![](gifs/registerProduct.gif)
+
+### See registered product
+![](gifs/registerProduct.gif)
