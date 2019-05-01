@@ -92,3 +92,27 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Acknowledgments
 * The open source UI framework is provided by [Black Rock Digital] (http://blackrockdigital.io/)
 * The open source market place JQuery shopping cart is provided by [Cody House] (https://codyhouse.co/)
+
+## Demo
+Below will all be Demos of our smart contract in action
+
+### See deployed Smart Contracts 
+![](gifs/seeDeployedContract.gif)
+
+### Check Laikoin Balance
+![](gifs/LaikoinGetBalance.gif)
+
+### Send Laikoin from one address to another
+![](gifs/LaikoinTransfer1.gif)
+
+### Check the balance of recipient (the Recipient started with balance of 1)
+![](gifs/LaikoinTransfer2.gif)
+
+### Register a product on Market Smart Contract
+![](gifs/registerProduct.gif)
+
+### See registered product
+![](gifs/registerProduct.gif)
+
+### Buy a product
+![](gifs/registerProduct.gif)
