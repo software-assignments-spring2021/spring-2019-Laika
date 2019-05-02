@@ -49,9 +49,39 @@ passport.deserializeUser(function (id, done) {
 login(passport);
 signup(passport);
 
+//rts
 app.get('/', function (req, res) {
     res.render('index');
 });
+app.get('/apply', function (req, res) {
+    res.render('apply');
+});
+app.get('/charity', function (req, res) {
+    res.render('charity');
+});
+app.get('/contactus', function (req, res) {
+    res.render('contactus');
+});
+app.get('/donor', function (req, res) {
+    res.render('donor');
+});
+app.get('/id', function (req, res) {
+    res.render('id');
+});
+app.get('/market', function (req, res) {
+    res.render('market');
+});
+app.get('/profile', function (req, res) {
+    res.render('profile');
+});
+app.get('/thankyou', function (req, res) {
+    res.render('thankyou');
+});
+app.get('/tutorial', function (req, res) {
+    res.render('tutorial');
+});
+
+
 
 
 
