@@ -98,7 +98,7 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Demo
 Below will all be Demos of our smart contract in action
 
-### See deployed Smart Contracts 
+### See deployed Smart Contracts
 ![](gifs/seeDeployedContract.gif)
 
 ### Check Laikoin Balance
@@ -118,3 +118,10 @@ Below will all be Demos of our smart contract in action
 
 ### Buy a product
 ![](gifs/registerProduct.gif)
+
+## IPFS usage
+
+*Note: This will only work after installing IPFS!*
+
+### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
+![](gifs/ipfsdaemon.gif)
