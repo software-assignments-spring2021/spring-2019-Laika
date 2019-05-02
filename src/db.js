@@ -5,11 +5,13 @@ const mongoose = require('mongoose');
 //const dbconf = '';
 
 const Client = new mongoose.Schema({
-    id: Number
+    id: String,
+    username: String,
+    password: String
 });
 
 const Corp = new mongoose.Schema({
-    id: Number,
+    id: String,
     email: String
 });
 
