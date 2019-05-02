@@ -128,3 +128,6 @@ Below will all be Demos of our smart contract in action
 
 ### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
 ![](gifs/ipfsdaemon.gif)
+
+### With daemon running, connect to the hash ID (either one provided to you, or one from adding to IPFS like the first gif)
+![](gifs/ipfsall.gif)
