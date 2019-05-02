@@ -5,6 +5,8 @@
 
 ![homePage](images/homePage.png)
 
+[Web GUI](GUI.md)
+
 ## Overview
 Crowd Donation Platform where all your donations to a charity will be tracked so you know how you money was spent exactly.
 
