@@ -122,6 +122,7 @@ Below will all be Demos of our smart contract in action
 ## IPFS usage
 
 *Note: This will only work after installing IPFS!*
+*If we end up getting things up on IPFS I will update this*
 
 ### If trying to put something on IPFS add the folder/documents/files/etc like so and get the hash ID
 ![](gifs/ipfsbuild.gif)
@@ -131,3 +132,5 @@ Below will all be Demos of our smart contract in action
 
 ### With daemon running, connect to the hash ID (either one provided to you, or one from adding to IPFS like the first gif)
 ![](gifs/ipfsall.gif)
+
+This is just an empty app with no contents, it hasn't crashed or anything like That
