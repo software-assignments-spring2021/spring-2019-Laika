@@ -68,7 +68,7 @@ Running Smart Contract tests
 
 * npm run dev
 
-## Troubleshooting
+## Trouble shooting
 * If Meta Mask is not popping up
 * First of all, make sure you don't have any other node than Ganache running in the background, no private node, no other Geth.
 * Go to the directory of your truffle project and delete the build directory of that directory.
