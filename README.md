@@ -123,5 +123,8 @@ Below will all be Demos of our smart contract in action
 
 *Note: This will only work after installing IPFS!*
 
+### If trying to put something on IPFS add the folder/documents/files/etc like so and get the hash ID
+![](gifs/ipfsbuild.gif)
+
 ### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
 ![](gifs/ipfsdaemon.gif)
