@@ -1,5 +1,5 @@
 pragma solidity ^0.5.0;
-import "contracts/Laikoin.sol";
+import "./Laikoin.sol";
 
 /**
  * @notice
