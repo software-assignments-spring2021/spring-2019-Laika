@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const open = require('open');
 const Client = mongoose.model('Client');
 const Corp = mongoose.model('Corp');
+const Trans = mongoose.model('Trans')
 const passport = require('passport');
 const flash = require('connect-flash')
 const LocalStrategy = require('passport-local').Strategy;
