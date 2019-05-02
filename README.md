@@ -39,6 +39,7 @@ Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-
 * React: npm install -g create-react-app
 * Web3.js: npm install web3
 * MongoDB: [Download](https://www.mongodb.com/download-center/community)
+* IPFS: [Download](https://docs.ipfs.io/introduction/install/)
 
 
 ### Installing
@@ -76,6 +77,7 @@ Running Smart Contract tests
 * [React](https://reactjs.org/) - Front-end framework
 * [Web3.js](https://web3js.readthedocs.io/en/1.0/#)
 * [MongoDB](https://www.mongodb.com/)
+* [IPFS](https://ipfs.io/)
 
 ## Contributing
 
