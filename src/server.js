@@ -132,8 +132,7 @@ function signup(passport) {
                         return done(err);
                     }
                     // already exists
-                    ifusername: String,
-                    password: String //password (user)
+                    if(user)
                     {
                         console.log('User already exists with username: ' + username);
                         return done(null, false, req.flash('message', 'User Already Exists'));
