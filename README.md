@@ -68,6 +68,14 @@ Running Smart Contract tests
 
 * npm run dev
 
+## Troubleshooting
+* If Meta Mask is not popping up
+* First of all, make sure you don't have any other node than Ganache running in the background, no private node, no other Geth.
+* Go to the directory of your truffle project and delete the build directory of that directory.
+* Open a fresh Ganache instance and in your terminal truffle migrate --reset --compile-all in your truffle project directory.
+* In your browser open Metamask, switch your network to the Main Ethereum Network and then switch back to your private network where your Ganache is running.
+* Then just to be safe completely quit and restart the browser, open your Metamask with your password, check if you are still on your private network, and everything should be fixed!
+
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
@@ -98,7 +106,7 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Demo
 Below will all be Demos of our smart contract in action
 
-### See deployed Smart Contracts 
+### See deployed Smart Contracts
 ![](gifs/seeDeployedContract.gif)
 
 ### Check Laikoin Balance
