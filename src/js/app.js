@@ -1,6 +1,5 @@
 App = {
   web3Provider: null,
-  //contracts: {"contract"},
   contracts: {},
   init: function () {
     // Load pets.
@@ -17,8 +16,11 @@ App = {
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
         petsRow.append(petTemplate.html());
       }
-    });
+    }
+  return App.initWeb3();
+},
 
+  initWeb3: function() {
     return App.initWeb3();
   },
   // init: async function() {
@@ -78,7 +80,7 @@ App = {
       //�NOTE: not suitable for production!
       // NOTE: web3Provider=null is member of App
       App3.web3Provider = new
-        Web3.providers.HttpProvider('http://localhost:7545');
+        Web3.providers.HttpProvider('http://localhost:8545');
     }
 
     // initialize contract by App function below
@@ -133,7 +135,7 @@ App = {
       // so disable its adopt button, and change the button text to 'Success'
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+          $('.panel-pet').eq(i).find('button');
         }
       }
     }).catch(function (err) {
