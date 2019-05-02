@@ -49,6 +49,33 @@ passport.deserializeUser(function (id, done) {
 login(passport);
 signup(passport);
 
+app.get('/', function (req, res) {
+    res.render('index');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/signout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+});
+
 /* Handle Login POST */
 app.post('/login', passport.authenticate('login', {
     successRedirect: '/profile',
