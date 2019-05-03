@@ -10,3 +10,4 @@ This page is built for charities to use the Laikoins they have been donated. By 
 
 ### Charities
 A donor can navigate the charities page to find a charity they like and make a donation to them.
+![charities.png](images/charities.png)
