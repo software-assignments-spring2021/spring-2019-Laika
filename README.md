@@ -43,6 +43,7 @@ Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-
 * React: npm install -g create-react-app
 * Web3.js: npm install web3
 * MongoDB: [Download](https://www.mongodb.com/download-center/community)
+* IPFS: [Download](https://docs.ipfs.io/introduction/install/)
 
 
 ### Installing
@@ -71,6 +72,14 @@ Running Smart Contract tests
 
 * npm run dev
 
+## Trouble shooting
+* If Meta Mask is not popping up
+* First of all, make sure you don't have any other node than Ganache running in the background, no private node, no other Geth.
+* Go to the directory of your truffle project and delete the build directory of that directory.
+* Open a fresh Ganache instance and in your terminal truffle migrate --reset --compile-all in your truffle project directory.
+* In your browser open Metamask, switch your network to the Main Ethereum Network and then switch back to your private network where your Ganache is running.
+* Then just to be safe completely quit and restart the browser, open your Metamask with your password, check if you are still on your private network, and everything should be fixed!
+
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
@@ -80,6 +89,7 @@ Running Smart Contract tests
 * [React](https://reactjs.org/) - Front-end framework
 * [Web3.js](https://web3js.readthedocs.io/en/1.0/#)
 * [MongoDB](https://www.mongodb.com/)
+* [IPFS](https://ipfs.io/)
 
 ## Contributing
 
@@ -96,3 +106,43 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Acknowledgments
 * The open source UI framework is provided by [Black Rock Digital] (http://blackrockdigital.io/)
 * The open source market place JQuery shopping cart is provided by [Cody House] (https://codyhouse.co/)
+
+## Demo
+Below will all be Demos of our smart contract in action
+
+### See deployed Smart Contracts
+![](gifs/seeDeployedContract.gif)
+
+### Check Laikoin Balance
+![](gifs/LaikoinGetBalance.gif)
+
+### Send Laikoin from one address to another
+![](gifs/LaikoinTransfer1.gif)
+
+### Check the balance of recipient (the Recipient started with balance of 1)
+![](gifs/LaikoinTransfer2.gif)
+
+### Register a product on Market Smart Contract
+![](gifs/registerProduct.gif)
+
+### See registered product
+![](gifs/registerProduct.gif)
+
+### Buy a product
+![](gifs/registerProduct.gif)
+
+## IPFS usage
+
+*Note: This will only work after installing IPFS!*
+*If we end up getting things up on IPFS I will update this*
+
+### If trying to put something on IPFS add the folder/documents/files/etc like so and get the hash ID
+![](gifs/ipfsbuild.gif)
+
+### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
+![](gifs/ipfsdaemon.gif)
+
+### With daemon running, connect to the hash ID (either one provided to you, or one from adding to IPFS like the first gif)
+![](gifs/ipfsall.gif)
+
+This is just an empty app with no contents, it hasn't crashed or anything like That

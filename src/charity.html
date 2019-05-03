@@ -50,9 +50,8 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" <a class="mailto"
-                href="mailto:contact@test.com">Contact Us</a>
-              </a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus.html">Contact us</a>
+
             </li>
           </ul>
         </div>
@@ -154,10 +153,17 @@
             <h2 class="text-secondary text-uppercase mb-0">ASPCA®</h2>
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/cabin.png" alt="">
-            <p class="mb-5">The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <!-- <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
-              Donate</a>
+              Donate</a> -->
+
+              <button class="btn btn-primary btn-lg btn-adopt" type="button" data-id="0">Donate</button>
+
+            <p class="mb-5">The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()" >
+              <i class="fa fa-close"></i>  Donate</a>
+            
 
           </div>
         </div>
@@ -178,7 +184,7 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/cake.png" alt="">
             <p class="mb-5">Founded in 1893 by social work and public health pioneer Lillian Wald and based on Manhattan's Lower East Side, Henry Street Settlement delivers a wide range of social service, arts and health care programs to more than 50,000 New Yorkers each year.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()">
               <i class="fa fa-close"></i>
               Donate</a>
           </div>
@@ -200,7 +206,7 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/circus.png" alt="">
             <p class="mb-5">For more 30 years, Student Sponsor Partners’ uniquely integrated program has provided over 7,000 low-income New York City students with a quality private high school education. All our students are paired with sponsors, who provide financial support, and mentors, who offer support and guidance, thus making a meaningful impact on their lives.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()">
               <i class="fa fa-close"></i>
               Donate</a>
           </div>
@@ -222,7 +228,7 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/game.png" alt="">
             <p class="mb-5">The Breast Cancer Research Foundation is a nonprofit organization committed to achieving prevention and a cure for breast cancer. We provide critical funding for cancer research worldwide to fuel advances in tumor biology, genetics, prevention, treatment, metastasis and survivorship.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()">
               <i class="fa fa-close"></i>
               Donate</a>
           </div>
@@ -244,7 +250,7 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/safe.png" alt="">
             <p class="mb-5">Citymeals on Wheels provides a continuous lifeline of nourishing meals and vital companionship to our homebound elderly neighbors.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()">
               <i class="fa fa-close"></i>
               Donate</a>
           </div>
@@ -256,7 +262,7 @@
   <!-- Portfolio Modal 6 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
     <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#" >
         <i class="fa fa-3x fa-times"></i>
       </a>
       <div class="container text-center">
@@ -266,7 +272,7 @@
             <hr class="star-dark mb-5">
             <img class="img-fluid mb-5" src="images/submarine.png" alt="">
             <p class="mb-5">New York Foundation for the Arts (NYFA) is a nonprofit service organization that empowers working artists and emerging arts organizations across all disciplines at critical stages in their creative lives and professional/organizational development.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()">
               <i class="fa fa-close"></i>
               Donate</a>
           </div>
@@ -276,6 +282,8 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
+  <script src="js/app.js"></script>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery/jquery.easing.min.js"></script>
@@ -294,6 +302,17 @@
         prom = prompt("That is not the right key, please try again", "");
       }
     }
+    //pop up window asking the user for hash id
+    function donate() {
+        var enter = prompt("Please enter your hash", "");
+        //var pattern = [a-zA-z0-9];
+        //var pattern = [0-9];
+        var amount;
+
+        if (enter != null) {
+           enter = prompt("Please enter the amount you want to donate", "");
+        }
+      }
 
   </script>
 </body>
