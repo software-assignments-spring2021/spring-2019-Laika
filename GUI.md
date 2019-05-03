@@ -7,3 +7,6 @@ You can view your public address here. This is the address you can send others t
 ### Marketplace
 This page is built for charities to use the Laikoins they have been donated. By using an e-commerce within our Laikoin ecosystem, we can track the usage of the donations in detail, and the donors can verify what the Charities are using their donations for.
 ![marketPlace](images/marketPlace.png)
+
+### Charities
+A donor can navigate the charities page to find a charity they like and make a donation to them.
