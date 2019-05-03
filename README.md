@@ -1,7 +1,11 @@
 [![Build Status](https://travis-ci.com/nyu-software-engineering/Laika.svg?branch=master)](https://travis-ci.com/nyu-software-engineering/Laika)
-
 ![Laika](logo.png)
+
 # Laika: A Crowd Donation Project
+
+![homePage](images/homePage.png)
+
+[Web GUI](GUI.md)
 
 ## Overview
 Crowd Donation Platform where all your donations to a charity will be tracked so you know how you money was spent exactly.
@@ -142,4 +146,3 @@ Below will all be Demos of our smart contract in action
 ![](gifs/ipfsall.gif)
 
 This is just an empty app with no contents, it hasn't crashed or anything like That
-
