@@ -118,9 +118,13 @@ Links to the Smart Contracts and transactions deploying the contracts are includ
 ### Check Laikoin Balance
 Open Remix, click run on the top right corner, then copy and paste the contract address you want to use next to "At Address" button.
 After you click "At Adress", click Deployed Contracts and you will be able to see a list of functions you can call.
+Then choose balanceOf and enter your public address.
+The output will be displayed in the middle section of Remix.
 ![](gifs/LaikoinGetBalance.gif)
 
 ### Send Laikoin from one address to another
+Choose transfer function and enter the public address you want to send Laikoin to, and how much.
+*Make sure you enter Rinkeby Address! Any public address at other network will result in permanent loss!!*
 ![](gifs/LaikoinTransfer1.gif)
 
 ### Check the balance of recipient (the Recipient started with balance of 1)
