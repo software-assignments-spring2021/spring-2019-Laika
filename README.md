@@ -111,9 +111,13 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 Below will all be Demos of our smart contract in action
 
 ### See deployed Smart Contracts
+You can go to [deployment.md](deployment.md) to find all the smart contracts deployed to Rinkeby testnet.
+Links to the Smart Contracts and transactions deploying the contracts are included.
 ![](gifs/seeDeployedContract.gif)
 
 ### Check Laikoin Balance
+Open Remix, click run on the top right corner, then copy and paste the contract address you want to use next to "At Address" button.
+After you click "At Adress", click Deployed Contracts and you will be able to see a list of functions you can call.
 ![](gifs/LaikoinGetBalance.gif)
 
 ### Send Laikoin from one address to another
