@@ -123,7 +123,7 @@ The output will be displayed in the middle section of Remix.
 ![](gifs/LaikoinGetBalance.gif)
 
 ### Send Laikoin from one address to another
-Choose transfer function and enter the public address you want to send Laikoin to, and how much.
+Choose *transfer* function and enter the public address you want to send Laikoin to, and how much.
 *Make sure you enter Rinkeby Address! Any public address at other network will result in permanent loss!!*
 ![](gifs/LaikoinTransfer1.gif)
 
@@ -132,14 +132,14 @@ The recipient in this case is using My Ether Wallet instead of Metamask for demo
 ![](gifs/LaikoinTransfer2.gif)
 
 ### Register a product on Market Smart Contract
-Choose registerProduct function under Deployed Contracts. Enter a number for ID, and make sure the ID is not already used. Price is also a number. For name and description, it must be in hexadecimal so use a converter and make sure to add "0x" at the front. When you click the function, a Metamask transction should be triggered.
+Choose *registerProduct* function under Deployed Contracts. Enter a number for ID, and make sure the ID is not already used. Price is also a number. For name and description, it must be in hexadecimal so use a converter and make sure to add "0x" at the front. When you click the function, a Metamask transction should be triggered.
 ![](gifs/registerProduct.gif)
 
 ### See registered product
-![](gifs/registerProduct.gif)
+![](gifs/seeProduct.gif)
 
 ### Buy a product
-![](gifs/registerProduct.gif)
+![](gifs/buyProduct.gif)
 
 ## IPFS usage
 
