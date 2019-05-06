@@ -140,6 +140,7 @@ To view the details of a registered product choose *getProductInfo* function and
 ![](gifs/seeProduct.gif)
 
 ### Buy a product
+To buy a product, choose *buyProduct* function, and enter the ID of the prodct you want to buy. A Metamask transaction should be triggered.
 ![](gifs/buyProduct.gif)
 
 ## IPFS usage
