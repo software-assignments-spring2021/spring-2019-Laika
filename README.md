@@ -136,6 +136,7 @@ Choose *registerProduct* function under Deployed Contracts. Enter a number for I
 ![](gifs/registerProduct.gif)
 
 ### See registered product
+To view the details of a registered product choose *getProductInfo* function and enter the product ID. Name and description returned are in hexadecimal, so remove "0x" at beggining then use a converter to view data.
 ![](gifs/seeProduct.gif)
 
 ### Buy a product
