@@ -146,15 +146,18 @@ To buy a product, choose *buyProduct* function, and enter the ID of the prodct y
 ## IPFS usage
 
 *Note: This will only work after installing IPFS!*
-*If we end up getting things up on IPFS I will update this*
 
-### If trying to put something on IPFS add the folder/documents/files/etc like so and get the hash ID
-![](gifs/ipfsbuild.gif)
+### To put something on IPFS add the folder/documents/files/etc like so and get the hash ID
+![](gifs/ipfsactualaddbuild.gif)
 
 ### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
 ![](gifs/ipfsdaemon.gif)
 
 ### With daemon running, connect to the hash ID (either one provided to you, or one from adding to IPFS like the first gif)
-![](gifs/ipfsall.gif)
+![](gifs/ipfsconnect.gif)
 
-This is just an empty app with no contents, it hasn't crashed or anything like That
+### If you would like to publish your hash so it can be accessed with an IPFS daemon, run the following command *This may take a while*
+
+![](images/ipfspublish.png)
+
+### Once it is published and you have the public hash id connect to https://ipfs.io/ipns/<hash>, where hash is the public hash ID given to you after running the previous command
