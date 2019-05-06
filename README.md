@@ -147,7 +147,7 @@ To buy a product, choose *buyProduct* function, and enter the ID of the prodct y
 
 *Note: This will only work after installing IPFS!*
 
-### To put something on IPFS add the folder/documents/files/etc like so and get the hash ID
+### To put something on IPFS add the folder/documents/files/etc like so and get the hash ID (the -r flag is for recursive)
 ![](gifs/ipfsactualaddbuild.gif)
 
 ### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
