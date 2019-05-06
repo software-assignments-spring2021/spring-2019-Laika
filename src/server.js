@@ -5,9 +5,10 @@ const expressSession = require('express-session');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const open = require('open');
+
 const Client = mongoose.model('Client');
 const Corp = mongoose.model('Corp');
-const Trans = mongoose.model('Trans')
+const Transaction = mongoose.model('Transaction')
 const passport = require('passport');
 const flash = require('connect-flash')
 const LocalStrategy = require('passport-local').Strategy;
@@ -15,7 +16,9 @@ const bCrypt = require('bcrypt-nodejs');
 
 const app = express();
 
-// Serve the static files from the React app
+app.set('views', path.join(__dirname + '/views'));
+app.set('view engine', 'hbs');
+
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, '../build/contracts')));
 app.use(bodyParser.json());
