@@ -128,10 +128,11 @@ Choose transfer function and enter the public address you want to send Laikoin t
 ![](gifs/LaikoinTransfer1.gif)
 
 ### Check the balance of recipient (the Recipient started with balance of 1)
-The recipient in this case is using My Ether Wallet instead of Metamask for demo purposes. You can sign in to your MEW account, and copy and paste the contract address as well as ABI of Laikoin smart contract to interact with it. 
+The recipient in this case is using My Ether Wallet instead of Metamask for demo purposes. You can sign in to your MEW account, and copy and paste the contract address as well as ABI of Laikoin smart contract to interact with it.
 ![](gifs/LaikoinTransfer2.gif)
 
 ### Register a product on Market Smart Contract
+Choose registerProduct function under Deployed Contracts. Enter a number for ID, and make sure the ID is not already used. Price is also a number. For name and description, it must be in hexadecimal so use a converter and make sure to add "0x" at the front. When you click the function, a Metamask transction should be triggered.
 ![](gifs/registerProduct.gif)
 
 ### See registered product
