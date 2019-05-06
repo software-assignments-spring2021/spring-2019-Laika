@@ -24,6 +24,7 @@
     "open": "^6.2.0"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^7.0.0",
