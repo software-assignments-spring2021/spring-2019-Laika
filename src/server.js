@@ -75,7 +75,11 @@ app.get('/market', function (req, res) {
     res.render('market');
 });
 app.get('/profile', function (req, res) {
-    res.render('profile');
+    Client.findOne({
+        id: "0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80"
+    }, function (err, client) {
+        res.render('profile', { client: client });
+    })
 });
 app.get('/thankyou', function (req, res) {
     res.render('thankyou');
@@ -83,26 +87,6 @@ app.get('/thankyou', function (req, res) {
 app.get('/tutorial', function (req, res) {
     res.render('tutorial');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.get('/signout', function (req, res) {
     req.logout();
@@ -112,14 +96,14 @@ app.get('/signout', function (req, res) {
 /* Handle Login POST */
 app.post('/login', passport.authenticate('login', {
     successRedirect: '/profile',
-    failureRedirect: '/',
+    failureRedirect: '/login',
     failureFlash: true
 }));
 
 /* Handle Registration POST */
 app.post('/signup', passport.authenticate('signup', {
     successRedirect: '/profile',
-    failureRedirect: '/signup',
+    failureRedirect: '/donor',
     failureFlash: true
 }));
 
@@ -138,13 +122,13 @@ app.get('/market', isAuthenticated, function (req, res) {
 function login(passport) {
 
     passport.use('login', new LocalStrategy({
-            passReqToCallback: true
-        },
+        passReqToCallback: true
+    },
         function (req, username, password, done) {
             // check in mongo if a user with username exists or not
             Client.findOne({
-                    'username': username
-                },
+                'username': username
+            },
                 function (err, user) {
                     // In case of any error, return using the done method
                     if (err)
@@ -178,8 +162,8 @@ function login(passport) {
 function signup(passport) {
 
     passport.use('signup', new LocalStrategy({
-            passReqToCallback: true // allows us to pass back the entire request to the callback
-        },
+        passReqToCallback: true // allows us to pass back the entire request to the callback
+    },
         function (req, username, password, done) {
 
             findOrCreateUser = function () {
@@ -193,8 +177,7 @@ function signup(passport) {
                         return done(err);
                     }
                     // already exists
-                    if(user)
-                    {
+                    if (user) {
                         console.log('User already exists with username: ' + username);
                         return done(null, false, req.flash('message', 'User Already Exists'));
                     } else {
@@ -235,6 +218,18 @@ function isAuthenticated(req, res, next) {
     // if the user is not authenticated then redirect him to the home page
     res.redirect('/');
 }
+
+// const test = new Client({
+//     id: "0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80",
+//     trans: [
+//         { source: "0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80", quantity: 5, destination: "0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80" },
+//         {source:"0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80", quantity:5, destination:"0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80"}
+//     ]
+// })
+
+// test.save(function (err, client, count) {
+//     console.log('made me some test', client, count, err);
+// });
 
 const port = process.env.PORT || 5000;
 app.listen(port);
