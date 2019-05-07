@@ -5,8 +5,10 @@ const expressSession = require('express-session');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const open = require('open');
+
 const Client = mongoose.model('Client');
 const Corp = mongoose.model('Corp');
+const Transaction = mongoose.model('Transaction')
 const passport = require('passport');
 const flash = require('connect-flash')
 const LocalStrategy = require('passport-local').Strategy;
@@ -14,7 +16,9 @@ const bCrypt = require('bcrypt-nodejs');
 
 const app = express();
 
-// Serve the static files from the React app
+app.set('views', path.join(__dirname + '/views'));
+app.set('view engine', 'hbs');
+
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, '../build/contracts')));
 app.use(bodyParser.json());
@@ -47,6 +51,63 @@ passport.deserializeUser(function (id, done) {
 
 login(passport);
 signup(passport);
+
+//rts
+app.get('/', function (req, res) {
+    res.render('index');
+});
+app.get('/apply', function (req, res) {
+    res.render('apply');
+});
+app.get('/charity', function (req, res) {
+    res.render('charity');
+});
+app.get('/contactus', function (req, res) {
+    res.render('contactus');
+});
+app.get('/donor', function (req, res) {
+    res.render('donor');
+});
+app.get('/id', function (req, res) {
+    res.render('id');
+});
+app.get('/market', function (req, res) {
+    res.render('market');
+});
+app.get('/profile', function (req, res) {
+    res.render('profile');
+});
+app.get('/thankyou', function (req, res) {
+    res.render('thankyou');
+});
+app.get('/tutorial', function (req, res) {
+    res.render('tutorial');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/signout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+});
 
 /* Handle Login POST */
 app.post('/login', passport.authenticate('login', {

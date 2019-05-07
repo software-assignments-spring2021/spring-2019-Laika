@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary  text-uppercase" id="mainNav" style="align:right" >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">Laika</a>
+        <a class="navbar-brand js-scroll-trigger" href="/">Laika</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -45,13 +45,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left:650px">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="market.html">Market</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="market">Market</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity">Charities</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus.html">Contact us</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus">Contact us</a>
             </li>
           </ul>
         </div>
@@ -71,37 +71,11 @@
         </div>
 
         <div class="profile-card__cnt js-profile-cnt">
-          <div class="profile-card__name">Apply Now To Get Donations! </div>
+          <div class="profile-card__name">Get your donor id </div>
 
 
-        <div class="cont">
-          <div class="form apply">
-            <label>
-              <span>Charity Name</span>
-              <input type="Charity Name" />
-            </label>
 
-              <label>
-
-                <span>Charity Website</span>
-                <input type="Charity Website" />
-              </label>
-
-              <label>
-              <span>First and Last name</span>
-              <input type="Contact Name" />
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input type="Email" />
-            </label>
-            <label>
-              <span>503C Link</span>
-              <input type="Email" />
-            </label>
-
-            <button type="button" class="submit" onclick=thanks()>Submit</button>
+            <button type="button" class="submit" onclick=mark()>Lets get started!</button>
 
       </div>
 
@@ -131,20 +105,20 @@
 
     <script>
       function mark() {
-        var prom = prompt("Please enter your key", "");
+        var prom = prompt("What is 2 * 8?", "");
         if (prom == null) {
 
         }
-        else if (prom == "smalldogs") {
-          var win = window.open("market.html");
+        else if (prom == "16") {
+          var win = window.open("id");
           win.focus();
         } else {
-          prom = prompt("That is not the right key, please try again", "");
+          prom = prompt("Hmmm.... please try again", "");
         }
       }
 
       function thanks(){
-        window.location = "thankyou.html";
+        window.location = "thankyou";
       }
     </script>
   </body>

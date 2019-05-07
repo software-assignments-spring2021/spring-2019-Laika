@@ -10,8 +10,8 @@
   <title>Laika</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Plugin CSS -->
+
   <!-- Custom styles for this template -->
   <link href="css/freelancer.css" rel="stylesheet">
 
@@ -31,33 +32,39 @@
 
         <link rel="stylesheet" href="css/profile_style.css">
 
+</head>
 
 <body id="page-top">
 
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary  text-uppercase" id="mainNav" style="align:right" >
+    <nav class="navbar navbar-expand-lg bg-secondary  text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html">Laika</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand js-scroll-trigger" href="/">Laika</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+          data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive" style="padding-left:650px">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="market.html">Market</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " href="profile">Profile</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity.html">Charities</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " onclick="mark()">Market</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus.html">Contact us</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity">Charities</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus">Contact us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
 
 
     <body>
@@ -67,20 +74,56 @@
 
       <div class="profile-card js-profile-card">
         <div class="profile-card__img">
-          <img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/dogue-de-bordeaux-1047521__480.jpg" alt="profile card">
+          <img src="https://media4.s-nbcnews.com/j/newscms/2019_03/1403289/boo-worlds-cutest-dog-today-190119-main-01_e936818b2af79715c69ec876aa1361ef.fit-2000w.jpg" alt="profile card">
         </div>
 
         <div class="profile-card__cnt js-profile-cnt">
-          <div class="profile-card__name">Get your donor id </div>
+          <div class="profile-card__name">0x3e4Ed5623Ee2ceC10DDaFC67277dA0A94D08dc80</div>
+          </div>
 
+          <div class="profile-card-inf">
+            <div class="profile-card-inf__item">
+              <div class="profile-card-inf__title">15</div>
+              <div class="profile-card-inf__txt">Donations</div>
+            </div>
+            <div class="profile-card-inf__item">
+              <div class="profile-card-inf__title">123</div>
+              <div class="profile-card-inf__txt">Laikoins left</div>
+            </div>
 
+          </div>
 
-            <button type="button" class="submit" onclick=mark()>Lets get started!</button>
+        </div>
+
+        <div class="profile-card-message js-message">
+          <form class="profile-card-form">
+            <div class="profile-card-form__container">
+              <textarea placeholder="Say something..."></textarea>
+            </div>
+
+            <div class="profile-card-form__bottom">
+              <button class="profile-card__button button--blue js-message-close">
+                Send
+              </button>
+
+              <button class="profile-card__button button--gray js-message-close">
+                Cancel
+              </button>
+            </div>
+          </form>
+
+          <div class="profile-card__overlay js-message-close"></div>
+        </div>
 
       </div>
 
-  </div>
+</div>
+
+
+
         <script  src="js/index.js"></script>
+
+
 
 
     </body>
@@ -105,21 +148,18 @@
 
     <script>
       function mark() {
-        var prom = prompt("What is 2 * 8?", "");
+        var prom = prompt("Please enter your key", "");
         if (prom == null) {
 
         }
-        else if (prom == "16") {
-          var win = window.open("id.html");
+        else if (prom == "smalldogs") {
+          var win = window.open("market");
           win.focus();
         } else {
-          prom = prompt("Hmmm.... please try again", "");
+          prom = prompt("That is not the right key, please try again", "");
         }
       }
 
-      function thanks(){
-        window.location = "thankyou.html";
-      }
     </script>
   </body>
 
