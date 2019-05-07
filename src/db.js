@@ -12,8 +12,6 @@ const Transaction = new mongoose.Schema({
 
 const Client = new mongoose.Schema({
     id: String,
-    username: String,
-    password: String,
     trans: [Transaction]
 });
 
