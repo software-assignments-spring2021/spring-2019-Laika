@@ -1,7 +1,11 @@
 [![Build Status](https://travis-ci.com/nyu-software-engineering/Laika.svg?branch=master)](https://travis-ci.com/nyu-software-engineering/Laika)
-
 ![Laika](logo.png)
+
 # Laika: A Crowd Donation Project
+
+![homePage](images/homePage.png)
+
+[Web GUI](GUI.md)
 
 ## Overview
 Crowd Donation Platform where all your donations to a charity will be tracked so you know how you money was spent exactly.
@@ -68,6 +72,14 @@ Running Smart Contract tests
 
 * npm run dev
 
+## Trouble shooting
+* If Meta Mask is not popping up
+* First of all, make sure you don't have any other node than Ganache running in the background, no private node, no other Geth.
+* Go to the directory of your truffle project and delete the build directory of that directory.
+* Open a fresh Ganache instance and in your terminal truffle migrate --reset --compile-all in your truffle project directory.
+* In your browser open Metamask, switch your network to the Main Ethereum Network and then switch back to your private network where your Ganache is running.
+* Then just to be safe completely quit and restart the browser, open your Metamask with your password, check if you are still on your private network, and everything should be fixed!
+
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
@@ -98,23 +110,54 @@ Please read [CONTRIBUTING.md](https://github.com/nyu-software-engineering/crowd-
 ## Demo
 Below will all be Demos of our smart contract in action
 
-### See deployed Smart Contracts 
+### See deployed Smart Contracts
+You can go to [deployment.md](deployment.md) to find all the smart contracts deployed to Rinkeby testnet.
+Links to the Smart Contracts and transactions deploying the contracts are included.
 ![](gifs/seeDeployedContract.gif)
 
 ### Check Laikoin Balance
+Open Remix, click run on the top right corner, then copy and paste the contract address you want to use next to "At Address" button.
+After you click "At Adress", click Deployed Contracts and you will be able to see a list of functions you can call.
+Then choose balanceOf and enter your public address.
+The output will be displayed in the middle section of Remix.
 ![](gifs/LaikoinGetBalance.gif)
 
 ### Send Laikoin from one address to another
+Choose *transfer* function and enter the public address you want to send Laikoin to, and how much.
+*Make sure you enter Rinkeby Address! Any public address at other network will result in permanent loss!!*
 ![](gifs/LaikoinTransfer1.gif)
 
 ### Check the balance of recipient (the Recipient started with balance of 1)
+The recipient in this case is using My Ether Wallet instead of Metamask for demo purposes. You can sign in to your MEW account, and copy and paste the contract address as well as ABI of Laikoin smart contract to interact with it.
 ![](gifs/LaikoinTransfer2.gif)
 
 ### Register a product on Market Smart Contract
+Choose *registerProduct* function under Deployed Contracts. Enter a number for ID, and make sure the ID is not already used. Price is also a number. For name and description, it must be in hexadecimal so use a converter and make sure to add "0x" at the front. When you click the function, a Metamask transction should be triggered.
 ![](gifs/registerProduct.gif)
 
 ### See registered product
-![](gifs/registerProduct.gif)
+To view the details of a registered product choose *getProductInfo* function and enter the product ID. Name and description returned are in hexadecimal, so remove "0x" at beggining then use a converter to view data.
+![](gifs/seeProduct.gif)
 
 ### Buy a product
-![](gifs/registerProduct.gif)
+To buy a product, choose *buyProduct* function, and enter the ID of the prodct you want to buy. A Metamask transaction should be triggered.
+![](gifs/buyProduct.gif)
+
+## IPFS usage
+
+*Note: This will only work after installing IPFS!*
+
+### To put something on IPFS add the folder/documents/files/etc like so and get the hash ID (the -r flag is for recursive)
+![](gifs/ipfsactualaddbuild.gif)
+
+### Initialize the IPFS daemon, this step is necessary to connect to IPFS hashes at http://127.0.0.1:8080/ipfs/<hash>
+![](gifs/ipfsdaemon.gif)
+
+### With daemon running, connect to the hash ID (either one provided to you, or one from adding to IPFS like the first gif)
+![](gifs/ipfsconnect.gif)
+
+### If you would like to publish your hash so it can be accessed with an IPFS daemon, run the following command *This may take a while*
+
+![](images/ipfspublish.png)
+
+### Once it is published and you have the public hash id connect to https://ipfs.io/ipns/<hash>, where hash is the public hash ID given to you after running the previous command
