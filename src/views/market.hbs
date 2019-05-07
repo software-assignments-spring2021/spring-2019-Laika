@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <p id="demo"></p>
+<head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -11,7 +12,6 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Plugin CSS -->
+  <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="css/freelancer.css" rel="stylesheet">
@@ -50,6 +51,7 @@
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contactus">Contact us</a>
+
             </li>
           </ul>
         </div>
@@ -57,66 +59,311 @@
     </nav>
 
 
+
+
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Market Place</h2>
+      <h2 class="text-center text-uppercase text-secondary mb-0">Market</h2>
       <hr class="star-dark mb-5">
-
-      <div id="petsRow" class="row">
-        <!-- PETS LOAD HERE -->
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/bone.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/bvets.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/officesupp.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/amos.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/petsuppl.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/general.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div id="petTemplate" style="display: none; margin">
-      <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="panel panel-default panel-pet">
-          <div class="panel-heading">
-            <h3 class="panel-title">Scrappy</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
-            <br/><br/>
-            <strong>Item</strong>: <span class="pet-breed">Golden Retriever</span><br/>
-            <strong>Cost</strong>: <span class="pet-cost">3</span><br/>
-            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">Select</button>
+
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Laika 2019</small>
+    </div>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Food</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/bone.png" alt="">
+            <!-- <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Donate</a> -->
+                          <form action="/">
+              Charity name: <br>
+              <input type="text" name="charityname" value="">
+              <br>
+              Item name: <br>
+              <input type="text" name="itemname" value="">
+              <br>
+              Quantity: <br>
+              <input type="text" name="quantity" value="">
+              <br>
+              Shipping address: <br>
+              <input type="text" name="address" value="">
+              <br>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-</main>
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/jquery/jquery.easing.min.js"></script>
-<script src="vendor/jquery/magnific-popup.js"></script>
-<script src="js/freelancer.min.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
-    <script>
-      function mark() {
-        var prom = prompt("Please enter your key", "");
-        if (prom == null) {
 
-        }
-        else if (prom == "smalldogs") {
-          var win = window.open("market");
-          win.focus();
-        } else {
-          prom = prompt("That is not the right key, please try again", "");
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Bloomberg Vets</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/bvets.png" alt="">
+            <form action="/">
+            Charity name: <br>
+            <input type="text" name="charityname" value="">
+            <br>
+            Service requested: <br>
+            <input type="text" name="quantity" value="">
+            <br>
+            Notes: <br>
+            <input type="text" name="address" value="">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Office Depot</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/officesupp.png" alt="">
+            <form action="/">
+          Charity name: <br>
+          <input type="text" name="charityname" value="">
+          <br>
+          Item name: <br>
+          <input type="text" name="itemname" value="">
+          <br>
+          Quantity: <br>
+          <input type="text" name="quantity" value="">
+          <br>
+          Shipping address: <br>
+          <input type="text" name="address" value="">
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Amos Vets</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/amos.png" alt="">
+            <form action="/">
+            Charity name: <br>
+            <input type="text" name="charityname" value="">
+            <br>
+            Service requested: <br>
+            <input type="text" name="quantity" value="">
+            <br>
+            Notes: <br>
+            <input type="text" name="address" value="">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Pet Supplies</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/petsuppl.png" alt="">
+            <form action="/">
+          Charity name: <br>
+          <input type="text" name="charityname" value="">
+          <br>
+          Item name: <br>
+          <input type="text" name="itemname" value="">
+          <br>
+          Quantity: <br>
+          <input type="text" name="quantity" value="">
+          <br>
+          Shipping address: <br>
+          <input type="text" name="address" value="">
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#" >
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">General Donations</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="images/general.png" alt="">
+            <form action="/">
+          Charity name: <br>
+          <input type="text" name="charityname" value="">
+          <br>
+          Donation Amount: <br>
+          <input type="text" name="quantity" value="">
+          <br>
+          Notes: <br>
+          <input type="text" name="address" value="">
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/app.js"></script>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.easing.min.js"></script>
+  <script src="vendor/jquery/magnific-popup.js"></script>
+  <script src="js/freelancer.min.js"></script>
+  <script>
+
+    //pop up window asking the user for hash id
+    function donate() {
+        var enter = prompt("Please enter your hash", "");
+        //var pattern = [a-zA-z0-9];
+        //var pattern = [0-9];
+        var amount;
+
+        if (enter != null) {
+           enter = prompt("Please enter the amount you want to donate", "");
         }
       }
 
-    </script>
-
-  </body>
+  </script>
+</body>
 
 </html>
