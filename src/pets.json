@@ -4,7 +4,7 @@
     "name": "Frieda",
     "picture": "images/scottish-terrier.jpeg",
     "age": 3,
-    "breed": "Scottish Terrier",
+    "service": "Scottish Terrier",
     "location": "Lisco, Alabama"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Gina",
     "picture": "images/scottish-terrier.jpeg",
     "age": 3,
-    "breed": "Scottish Terrier",
+    "service": "Scottish Terrier",
     "location": "Tooleville, West Virginia"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Collins",
     "picture": "images/french-bulldog.jpeg",
     "age": 2,
-    "breed": "French Bulldog",
+    "service": "French Bulldog",
     "location": "Freeburn, Idaho"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Melissa",
     "picture": "images/boxer.jpeg",
     "age": 2,
-    "breed": "Boxer",
+    "service": "Boxer",
     "location": "Camas, Pennsylvania"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Jeanine",
     "picture": "images/french-bulldog.jpeg",
     "age": 2,
-    "breed": "French Bulldog",
+    "service": "French Bulldog",
     "location": "Gerber, South Dakota"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Elvia",
     "picture": "images/french-bulldog.jpeg",
     "age": 3,
-    "breed": "French Bulldog",
+    "service": "French Bulldog",
     "location": "Innsbrook, Illinois"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Latisha",
     "picture": "images/golden-retriever.jpeg",
     "age": 3,
-    "breed": "Golden Retriever",
+    "service": "Golden Retriever",
     "location": "Soudan, Louisiana"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Coleman",
     "picture": "images/golden-retriever.jpeg",
     "age": 3,
-    "breed": "Golden Retriever",
+    "service": "Golden Retriever",
     "location": "Jacksonwald, Palau"
   },
   {
@@ -68,7 +68,7 @@
     "name": "Nichole",
     "picture": "images/french-bulldog.jpeg",
     "age": 2,
-    "breed": "French Bulldog",
+    "service": "French Bulldog",
     "location": "Honolulu, Hawaii"
   },
   {
@@ -76,7 +76,7 @@
     "name": "Fran",
     "picture": "images/boxer.jpeg",
     "age": 3,
-    "breed": "Boxer",
+    "service": "Boxer",
     "location": "Matheny, Utah"
   },
   {
@@ -84,7 +84,7 @@
     "name": "Leonor",
     "picture": "images/boxer.jpeg",
     "age": 2,
-    "breed": "Boxer",
+    "service": "Boxer",
     "location": "Tyhee, Indiana"
   },
   {
@@ -92,7 +92,7 @@
     "name": "Dean",
     "picture": "images/scottish-terrier.jpeg",
     "age": 3,
-    "breed": "Scottish Terrier",
+    "service": "Scottish Terrier",
     "location": "Windsor, Montana"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Stevenson",
     "picture": "images/french-bulldog.jpeg",
     "age": 3,
-    "breed": "French Bulldog",
+    "service": "French Bulldog",
     "location": "Kingstowne, Nevada"
   },
   {
@@ -108,7 +108,7 @@
     "name": "Kristina",
     "picture": "images/golden-retriever.jpeg",
     "age": 4,
-    "breed": "Golden Retriever",
+    "service": "Golden Retriever",
     "location": "Sultana, Massachusetts"
   },
   {
@@ -116,7 +116,7 @@
     "name": "Ethel",
     "picture": "images/golden-retriever.jpeg",
     "age": 2,
-    "breed": "Golden Retriever",
+    "service": "Golden Retriever",
     "location": "Broadlands, Oregon"
   },
   {
@@ -124,7 +124,7 @@
     "name": "Terry",
     "picture": "images/golden-retriever.jpeg",
     "age": 2,
-    "breed": "Golden Retriever",
+    "service": "Golden Retriever",
     "location": "Dawn, Wisconsin"
   }
 ]

@@ -1,154 +1,152 @@
 [
   {
     "id": 0,
-    "name": "Frieda",
+    "name": "Amos",
     "picture": "images/amos.png",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama"
+    "cost": 3,
+    "service": "Rabies Shots",
+    "location": "West Village"
   },
   {
     "id": 1,
-    "name": "Gina",
+    "name": "Amos",
     "picture": "images/amos.png",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia"
+    "cost": 3,
+    "service": "Check Up",
+    "location": "West Village"
   },
   {
     "id": 2,
     "name": "Collins",
     "picture": "images/bone.png",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Freeburn, Idaho"
+    "cost": 2,
+    "service": "Vegetarian Dog Food",
+    "location": "Union Sq"
   },
   {
     "id": 3,
     "name": "Melissa",
     "picture": "images/general.png",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Camas, Pennsylvania"
+    "cost": 2,
+    "service": "Allergy Medicine",
+    "location": "USA"
   },
   {
     "id": 4,
     "name": "Jeanine",
     "picture": "images/bone.png",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Gerber, South Dakota"
+    "cost": 2,
+    "service": "Protein Packed Dog Food",
+    "location": "UES"
   },
   {
     "id": 5,
     "name": "Elvia",
     "picture": "images/bone.png",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois"
+    "cost": 3,
+    "service": "Vegan Dog Food",
+    "location": "USA"
   },
   {
     "id": 6,
     "name": "Latisha",
     "picture": "images/bvets.png",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana"
+    "cost": 3,
+    "service": "FIV Check",
+    "location": "USA"
   },
   {
     "id": 7,
     "name": "Coleman",
     "picture": "images/bvets.png",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau"
+    "cost": 3,
+    "service": "Medicine",
+    "location": "USA"
   },
   {
     "id": 8,
     "name": "Nichole",
     "picture": "images/bone.png",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii"
+    "cost": 2,
+    "service": "French Food",
+    "location": "USA"
   },
   {
     "id": 9,
     "name": "Fran",
     "picture": "images/general.png",
-    "age": 3,
-    "breed": "Boxer",
-    "location": "Matheny, Utah"
+    "cost": 3,
+    "service": "Charity of your choice",
+    "location": "USA"
   },
   {
     "id": 10,
     "name": "Leonor",
     "picture": "images/general.png",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana"
+    "cost": 5,
+    "service": "Charity of your choice",
+    "location": "USA"
   },
   {
     "id": 11,
     "name": "Dean",
     "picture": "images/amos.png",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Windsor, Montana"
+    "cost": 3,
+    "service": "Flea Medicine",
+    "location": "USA"
   },
   {
     "id": 12,
     "name": "Stevenson",
     "picture": "images/bone.png",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada"
+    "cost": 3,
+    "service": "Wet Food",
+    "location": "USA"
   },
   {
     "id": 13,
     "name": "Kristina",
     "picture": "images/bvets.png",
-    "age": 4,
-    "breed": "Golden Retriever",
-    "location": "Sultana, Massachusetts"
+    "cost": 4,
+    "service": "Bath",
+    "location": "Chelsea"
   },
   {
     "id": 14,
     "name": "Ethel",
     "picture": "images/bvets.png",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Broadlands, Oregon"
+    "cost": 2,
+    "service": "Medicine",
+    "location": "USA"
   },
   {
     "id": 15,
     "name": "Terry",
     "picture": "images/bvets.png",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
+    "cost": 2,
+    "service": "Brush",
+    "location": "USA"
   },
   {
     "id": 16,
     "name": "Terry",
     "picture": "images/bvets.png",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
+    "cost": 2,
+    "service": "Adoption Fees",
+    "location": "USA"
   },
   {
     "id": 17,
     "name": "Terry",
     "picture": "images/bvets.png",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
-  },
+    "cost": 2,
+    "service": "Adoption Fees",
+    "location": "USA"  },
   {
     "id": 18,
     "name": "Terry",
     "picture": "images/bvets.png",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
-  }
+    "cost": 2,
+    "service": "Adoption Fees",
+    "location": "USA"  }
 ]
