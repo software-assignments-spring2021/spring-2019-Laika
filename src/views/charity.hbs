@@ -44,7 +44,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " href="profile">Profile</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " onclick="mark()">Market</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger " href="market">Market</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="charity">Charities</a>
@@ -163,7 +163,7 @@
             <p class="mb-5">The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#" onclick = "donate()" >
               <i class="fa fa-close"></i>  Donate</a>
-            
+
 
           </div>
         </div>
@@ -290,18 +290,7 @@
   <script src="vendor/jquery/magnific-popup.js"></script>
   <script src="js/freelancer.min.js"></script>
   <script>
-    function mark() {
-      var prom = prompt("Please enter your key", "");
-      if (prom == null) {
 
-      }
-      else if (prom == "smalldogs") {
-        var win = window.open("market");
-        win.focus();
-      } else {
-        prom = prompt("That is not the right key, please try again", "");
-      }
-    }
     //pop up window asking the user for hash id
     function donate() {
         var enter = prompt("Please enter your hash", "");
