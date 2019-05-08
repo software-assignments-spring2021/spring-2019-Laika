@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 const Transaction = new mongoose.Schema({
     source: String,
-    quantity: Number,
+    //quantity: Number,
     destination: String
 })
 
