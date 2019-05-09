@@ -161,3 +161,7 @@ To buy a product, choose *buyProduct* function, and enter the ID of the prodct y
 ![](images/ipfspublish.png)
 
 ### Once it is published and you have the public hash id connect to https://ipfs.io/ipns/<hash>, where hash is the public hash ID given to you after running the previous command
+
+
+### Our entire code repository as of May 9th, 2019 at 12:54pm is published on ipfs at http://127.0.0.1:8080/ipfs/QmRwBntNNQwbiBau5keRWpE2x8jbLLxcqxS8zD2FGQSxKo
+*Remember you need ipfs daemon running in order to connect to this hash!*
