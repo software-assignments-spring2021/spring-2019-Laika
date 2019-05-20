@@ -48,43 +48,43 @@ Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-
 
 ### Installing
 
-1. Install latest version of Node.js for your OS here: [Download] (https://nodejs.org/en/download/)
-		* Verify installation with: node -v; npm -v
+1. Install latest version of Node.js for your OS here: [Download](https://nodejs.org/en/download/)
+* Verify installation with: node -v; npm -v
 
-2. Install Ganache: [Download] (https://truffleframework.com/ganache)
-		* Create a new workspace in Ganache (procede without changing anything in the settings!)
+2. Install Ganache: [Download](https://truffleframework.com/ganache)
+* Create a new workspace in Ganache (procede without changing anything in the settings!)
 
-3. Install MongoDB: [Download] (https://www.mongodb.com/download-center/community)
+3. Install MongoDB: [Download](https://www.mongodb.com/download-center/community)
 
-4. Install IPFS: [Download] (https://docs.ipfs.io/introduction/install/)
-		* Follow instructions in a section below for how to use
+4. Install IPFS: [Download](https://docs.ipfs.io/introduction/install/)
+* Follow instructions in a section below for how to use
 
-5. Install Metmask for your browser: [Download] (https://metamask.io/)
-		* Register by clicking on fox icon in browser, and following instructions
-		* Make sure to save Seed Phrase!
-		* Once Done, click on the drop down meny and select Custom RPC, add a network name and with ganache add http://localhost:7545 to the RPC URL to test locally. To switch to one of the accounts provided by Ganache click on your account next to the network and import account. Click on the key symbol next to one of the hashes and copy and paste that into the private key field and import.
-		* Or click on the drop down menu at the top and change from Ethereum Main Network to Rinkeby Test Network (otherwise you may spend real money and lose it if you have ether!) if you would like to use the contracts on Rinkeby
+5. Install Metmask for your browser: [Download](https://metamask.io/)
+* Register by clicking on fox icon in browser, and following instructions
+* Make sure to save Seed Phrase!
+* Once Done, click on the drop down meny and select Custom RPC, add a network name and with ganache add http://localhost:7545 to the RPC URL to test locally. To switch to one of the accounts provided by Ganache click on your account next to the network and import account. Click on the key symbol next to one of the hashes and copy and paste that into the private key field and import.
+* Or click on the drop down menu at the top and change from Ethereum Main Network to Rinkeby Test Network (otherwise you may spend real money and lose it if you have ether!) if you would like to use the contracts on Rinkeby
 
-6. In order to have ether on the Rinkeby test network go to: [Download] (https://faucet.rinkeby.io/)
-		* Follow the instructions, which include making a social media post on a platform like facebook or twitter with your ethereum wallet address (this can be found in MetaMask if you click on the hash number below your profile and above your balance).
+6. In order to have ether on the Rinkeby test network go to: [Download](https://faucet.rinkeby.io/)
+* Follow the instructions, which include making a social media post on a platform like facebook or twitter with your ethereum wallet address (this can be found in MetaMask if you click on the hash number below your profile and above your balance).
 
 7. Globally install the following packages: truffle, solc (solidity programming language), create-react-app, web3
 
 8. Clone the repository from our github to your local machine: https://github.com/nyu-software-engineering/Laika
 
 9. For the contracts (they are also deployed to the Rinkeby Test Net, and this can be seen from below instructions):
-		* Open Ganache
+* Open Ganache
 
-		* truffle develop
+* truffle develop
 
-		* compile
+* compile
 
-		* migrate
+* migrate
 
-		* test (if you wish to run the smart contract tests)
+* test (if you wish to run the smart contract tests)
 
 10. For the front end:
-		* cd src; npm run dev
+* cd src; npm run dev
 
 
 ## Running the tests
