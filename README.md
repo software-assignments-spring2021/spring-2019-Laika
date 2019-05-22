@@ -62,29 +62,33 @@ Please read [REQUIREMENTS.md](https://github.com/nyu-software-engineering/crowd-
 5. Install Metmask for your browser: [Download](https://metamask.io/)
 * Register by clicking on fox icon in browser, and following instructions
 * Make sure to save Seed Phrase!
-* Once Done, click on the drop down meny and select Custom RPC, add a network name and with ganache add http://localhost:7545 to the RPC URL to test locally. To switch to one of the accounts provided by Ganache click on your account next to the network and import account. Click on the key symbol next to one of the hashes and copy and paste that into the private key field and import.
-* Or click on the drop down menu at the top and change from Ethereum Main Network to Rinkeby Test Network (otherwise you may spend real money and lose it if you have ether!) if you would like to use the contracts on Rinkeby
+* Once Done, click on the drop down meny and select Custom RPC, add a network name and, with Ganache running, add http://localhost:7545 to the RPC URL to test locally. To switch to one of the accounts provided by Ganache, first copy the private key of an account in Ganache - you can find this by clicking the key icon next to each account number.  Then, in MetaMask, click on your account icon next to the network name and click to import account. Paste the private key you copied from Ganache into the private key field in MetaMask, and complete the import.
+* Or, if you prefer to use the Rinkeby test network rather than Ganche, click on the drop down menu at the top and change from Ethereum Main Network to Rinkeby Test Network (otherwise you may spend real money and lose it if you have ether!) if you would like to use the contracts on Rinkeby
 
-6. In order to have ether on the Rinkeby test network go to: [Download](https://faucet.rinkeby.io/)
+6. If using the Rinkeby Test Network, in order to have ether on that network go to: [Download](https://faucet.rinkeby.io/)
 * Follow the instructions, which include making a social media post on a platform like facebook or twitter with your ethereum wallet address (this can be found in MetaMask if you click on the hash number below your profile and above your balance).
 
 7. Globally install the following packages: truffle, solc (solidity programming language), create-react-app, web3
 
 8. Clone the repository from our github to your local machine: https://github.com/nyu-software-engineering/Laika
 
-9. For the contracts (they are also deployed to the Rinkeby Test Net, and this can be seen from below instructions):
+9. To deploy the contracts (they are also deployed to the Rinkeby Test Net, and this can be seen from below instructions):
 * Open Ganache
 
-* truffle develop
+* `npm install`
 
-* compile
+* `truffle develop`
 
-* migrate
+* `compile`
 
-* test (if you wish to run the smart contract tests)
+* `migrate`
+
+* `test` (if you wish to run the smart contract tests)
 
 10. For the front end:
-* cd src; npm run dev
+* `cd src`
+* `npm install`
+* `npm run dev`
 
 
 ## Running the tests
@@ -93,27 +97,27 @@ Running Smart Contract tests
 
  **Make sure both Truffle and Ganache are installed!**
 
-1. Open ganache
-2. From command line: truffle compile
-3. From command line: truffle test
+1. Open Ganache
+2. From command line: `truffle compile`
+3. From command line: `truffle test`
 
 ## Deployment
 
-* truffle develop
+* `truffle develop`
 
-* compile
+* `compile`
 
-* migrate
+* `migrate`
 
-* cd src
+* `cd src`
 
-* npm run dev
+* `npm run dev`
 
 ## Trouble shooting
 * If Meta Mask is not popping up
 * First of all, make sure you don't have any other node than Ganache running in the background, no private node, no other Geth.
 * Go to the directory of your truffle project and delete the build directory of that directory.
-* Open a fresh Ganache instance and in your terminal truffle migrate --reset --compile-all in your truffle project directory.
+* Open a fresh Ganache instance and in your terminal `truffle migrate --reset --compile-all` in your truffle project directory.
 * In your browser open Metamask, switch your network to the Main Ethereum Network and then switch back to your private network where your Ganache is running.
 * Then just to be safe completely quit and restart the browser, open your Metamask with your password, check if you are still on your private network, and everything should be fixed!
 
